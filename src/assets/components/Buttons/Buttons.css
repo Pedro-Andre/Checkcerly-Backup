@@ -1,0 +1,44 @@
+.btn {
+  background: var(--clr-black);
+  cursor: pointer;
+  position: relative;
+  background: var(--clr-grad-orange);
+  border: none;
+  padding: 1.5rem 0.3rem;
+  border-radius: 1rem;
+}
+
+.btn a {
+  color: var(--clr-white);
+  background: var(--clr-black);
+  padding: 1.2rem 3.6rem;
+  border-radius: 0.8rem;
+  font-family: var(--font);
+  transition: 0.2s linear;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.btn a:hover {
+  background: transparent;
+}
+
+.theme-btn {
+  width: 8rem;
+  height: 4rem;
+  border-radius: 100vw;
+  background: var(--clr-black);
+  border: 0.3rem solid var(--clr-black-300);
+  position: relative;
+  cursor: pointer;
+}
+
+.moon {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--clr-black-300);
+  padding: 0.3rem;
+  border-radius: 50%;
+}

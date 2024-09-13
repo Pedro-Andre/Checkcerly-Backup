@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  font-optical-sizing: auto;
+  --font: "Outfit", sans-serif, system-ui, Avenir, Helvetica, Arial;
+  --fs-a: clamp();
+  --fs-p: clamp();
+  --fs-title: clamp();
+
+  --clr-white: #eee;
+  --clr-black: #141414;
+  --clr-gray: #999;
+  --clr-primary: #f07f3d;
+  --clr-secondary: #1e6443;
+  --clr-black-300: #616161;
+  --clr-black-shadow: #00000060;
+  --clr-white-low-op: #eeeeee59;
+  --clr-black-low-op: #14141450;
+  --clr-black-low-op-2: #61616126;
+  --clr-grad-orange: linear-gradient(90deg, #ff512f 0%, #f09819 100%);
+  --clr-grad-green: linear-gradient(90deg, #1e6443 0%, #7fb429 100%);
+  --clr-grad-stroke: linear-gradient(96deg, #009d53 0%, #f07f3d 100%);
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  font-family: var(--font);
+  font-size: 1.6rem;
+}

@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+
+.bottom-container {
+  width: 100%;
+  position: relative;
+}
+
+.bottom-container .content {
+  height: 40rem;
+  position: relative;
+}
+
+.bottom-container .bottom-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  z-index: 4;
+}
+
+.bottom-text p {
+  position: relative;
+  font-size: 4.5rem;
+  font-weight: 500;
+}
+
+.bottom-text span {
+  font-size: 2.5rem;
+  position: relative;
+}
+
+.svg-container {
+  position: absolute;
+  z-index: -1;
+  fill: var(--clr-black-low-op-2);
+  width: 100%;
+  backdrop-filter: blur(2rem);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.orb-1 {
+  position: absolute;
+  top: -10rem;
+  left: -10rem;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  background: var(--clr-grad-green);
+  z-index: -5;
+}
+
+.orb-2 {
+  position: absolute;
+  bottom: -6rem;
+  right: -6.5rem;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background: var(--clr-grad-orange);
+  z-index: -5;
+}

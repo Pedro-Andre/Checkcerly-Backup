@@ -1,0 +1,29 @@
+.container {
+  margin-top: 15rem;
+  width: 100%;
+  position: relative;
+}
+
+.container .container-title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.date-inputs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  width: 100%;
+  gap: 3rem 2rem;
+  max-width: 85rem;
+}
+
+.event-section {
+  padding-bottom: 35rem;
+}
+
+.event-section button {
+  margin-top: 7rem;
+  display: block;
+  margin-inline: auto;
+}

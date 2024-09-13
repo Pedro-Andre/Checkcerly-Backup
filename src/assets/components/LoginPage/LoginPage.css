@@ -1,0 +1,14 @@
+.nova-senha {
+  color: var(--clr-gray);
+  text-align: center;
+  display: block;
+  font-size: 2rem;
+  padding-top: 3rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.nova-senha:hover {
+  color: var(--clr-white);
+  text-decoration: underline;
+}

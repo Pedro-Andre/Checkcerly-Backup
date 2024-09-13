@@ -1,0 +1,28 @@
+.hero-section {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10rem;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h3 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 3.5rem;
+  width: 100%;
+  max-width: 60rem;
+  line-height: 6rem;
+}
+
+.hero-img {
+  flex: 1;
+  margin-top: 3rem;
+}
+
+.hero-text span {
+  color: var(--clr-primary);
+}
