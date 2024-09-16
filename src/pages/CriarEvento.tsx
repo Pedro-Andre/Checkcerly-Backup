@@ -7,14 +7,14 @@ function CriarEvento() {
   return (
     <>
       <header>
-        <Nav></Nav>
+        <Nav />
       </header>
 
       <main>
         <section className="event-section">
-          <OrganizadorEvento></OrganizadorEvento>
-          <EventoContainer></EventoContainer>
-          <CreateEventBtn></CreateEventBtn>
+          <OrganizadorEvento />
+          <EventoContainer />
+          <CreateEventBtn />
         </section>
       </main>
     </>

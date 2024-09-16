@@ -9,6 +9,10 @@
 }
 
 .main {
+  padding-bottom: 10rem;
+}
+
+.main-img {
   margin-top: 10rem;
   padding-bottom: 10rem;
 }
@@ -33,5 +37,18 @@
 }
 
 .event-img-container svg {
-  border: 0.1rem solid #ff0;
+  width: 100%;
+  display: block;
+  max-width: 60rem;
+}
+
+svg #check_2 #Vector_9 {
+  animation: check 1.8s linear infinite alternate;
+}
+
+@keyframes check {
+  to {
+    filter: brightness(2) drop-shadow(0 0 1rem #009d53)
+      drop-shadow(0 0 1rem #009d53);
+  }
 }

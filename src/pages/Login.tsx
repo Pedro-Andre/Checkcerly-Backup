@@ -6,7 +6,7 @@ function Login() {
   return (
     <>
       <header>
-        <Nav></Nav>
+        <Nav />
       </header>
 
       <section className="main login">

@@ -6,7 +6,7 @@ function Registro() {
   return (
     <>
       <header>
-        <Nav></Nav>
+        <Nav />
       </header>
 
       <section className="main">

@@ -11,7 +11,7 @@ function EventoCriado() {
         <Nav />
       </header>
 
-      <section className="main">
+      <section className="main main-img">
         <h1>Evento criado com sucesso!</h1>
         <div className="event-img-container">
           <EventImg />

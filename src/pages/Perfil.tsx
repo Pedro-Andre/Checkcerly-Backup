@@ -1,5 +1,20 @@
+import Nav from "../assets/components/Nav/Nav";
+import PerfilPage from "../assets/components/PerfilPage/PerfilPage";
+import EventList from "../assets/components/EventsList/EventList";
+
 function Perfil() {
-  return <h1>perfil</h1>;
+  return (
+    <>
+      <header>
+        <Nav />
+      </header>
+
+      <section className="main">
+        <PerfilPage />
+        <EventList />
+      </section>
+    </>
+  );
 }
 
 export default Perfil;

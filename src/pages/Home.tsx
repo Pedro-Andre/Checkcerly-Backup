@@ -8,20 +8,20 @@ function Home() {
   return (
     <>
       <header>
-        <Nav></Nav>
+        <Nav />
       </header>
 
       <main>
         <section>
-          <HeroSection></HeroSection>
+          <HeroSection />
         </section>
 
         <section>
-          <CardsSection></CardsSection>
+          <CardsSection />
         </section>
 
         <section>
-          <BottomSection></BottomSection>
+          <BottomSection />
         </section>
       </main>
     </>

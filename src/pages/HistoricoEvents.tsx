@@ -4,7 +4,7 @@ function HistoricoEvents() {
   return (
     <>
       <header>
-        <Nav></Nav>
+        <Nav />
       </header>
 
       <section>

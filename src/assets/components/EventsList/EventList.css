@@ -1,0 +1,56 @@
+.event-list .events-title span {
+  color: var(--clr-gray);
+}
+
+.event-list .svg-list {
+  height: 100%;
+  min-height: 80rem;
+}
+
+.event-list table {
+  width: 100%;
+  border-radius: 2rem 2rem 0 0;
+  text-align: center;
+  padding: 1.6rem;
+}
+
+/* TABLE HEAD */
+.event-list table th {
+  font-weight: 400;
+  background: var(--clr-black-100);
+  padding: 1rem;
+}
+
+.event-list table th:first-child {
+  border-radius: 2rem 0 0 0;
+}
+
+.event-list table th:last-child {
+  border-radius: 0 2rem 0 0;
+}
+
+.event-list table tr {
+  width: 100%;
+  background: var(--clr-black);
+}
+
+.event-list table tr {
+  width: 100%;
+  background: var(--clr-black);
+}
+
+tr:nth-child(even) {
+  background: #ff0;
+}
+
+.event-list table td {
+  height: 8rem;
+}
+
+.event-list table td:first-child {
+  border-radius: 0 0 0 2rem;
+}
+
+.event-list table td:last-child {
+  border-radius: 0 0 2rem 0;
+}

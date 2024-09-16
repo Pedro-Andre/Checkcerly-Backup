@@ -36,6 +36,7 @@ function App() {
             path="/criar-evento/evento-criado"
             element={<EventoCriado />}
           ></Route>
+          <Route path="/perfil" element={<Perfil />}></Route>
           <Route
             path="/criar-evento/evento-criado"
             element={<Perfil />}

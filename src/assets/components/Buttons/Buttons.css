@@ -1,5 +1,4 @@
 .btn {
-  background: var(--clr-black);
   cursor: pointer;
   position: relative;
   background: var(--clr-grad-orange);
@@ -41,4 +40,18 @@
   background: var(--clr-black-300);
   padding: 0.3rem;
   border-radius: 50%;
+}
+
+.participantes-btn {
+  background: var(--clr-black);
+  cursor: pointer;
+  position: relative;
+  border: 0.1rem solid var(--clr-black-300);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  transition: all 0.3s;
+}
+
+.participantes-btn:hover {
+  scale: 0.2;
 }
