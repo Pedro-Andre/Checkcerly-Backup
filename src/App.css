@@ -15,6 +15,10 @@ main,
   position: relative;
 }
 
+a {
+  color: var(--clr-white);
+}
+
 main::before,
 .main::before {
   content: "";

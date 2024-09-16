@@ -1,9 +1,10 @@
 import "./Buttons.css";
+import { Link } from "react-router-dom";
 
 function LoginBtn() {
   return (
     <button className="btn">
-      <a href="">Entrar</a>
+      <Link to={"/registro"}>Entrar</Link>
     </button>
   );
 }
