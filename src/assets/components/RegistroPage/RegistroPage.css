@@ -49,3 +49,7 @@ section .btn-2 {
   margin-inline: auto;
   margin-top: 2rem;
 }
+
+.registro-section {
+  margin-bottom: 15rem;
+}

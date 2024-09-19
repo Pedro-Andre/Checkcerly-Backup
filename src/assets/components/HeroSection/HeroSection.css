@@ -26,3 +26,7 @@
 .hero-text span {
   color: var(--clr-primary);
 }
+
+.hero-text .create-btn {
+  margin: 0;
+}

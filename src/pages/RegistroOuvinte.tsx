@@ -1,6 +1,7 @@
 import OuvintePage from "../assets/components/OuvintePage/OuvintePage";
 import Nav from "../assets/components/Nav/Nav";
 import "../assets/components/PagesCss/Registro.css";
+import Footer from "../assets/components/Footer/Footer";
 
 function RegistroOuvinte() {
   return (
@@ -9,9 +10,15 @@ function RegistroOuvinte() {
         <Nav />
       </header>
 
-      <section className="main">
-        <OuvintePage />
-      </section>
+      <main>
+        <section>
+          <OuvintePage />
+        </section>
+
+        <footer>
+          <Footer />
+        </footer>
+      </main>
     </>
   );
 }

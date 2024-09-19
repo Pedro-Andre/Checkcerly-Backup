@@ -36,22 +36,3 @@
 .card span {
   font-size: 2.5rem;
 }
-
-/* GLOW EFFECT CURSOR */
-
-/* .cards-container .card::before {
-  content: "";
-  position: absolute;
-  background: radial-gradient(var(--clr), transparent, transparent);
-  width: 40rem;
-  height: 40rem;
-  top: var(--y);
-  left: var(--x);
-  transform: translate(-50%, -50%);
-  filter: blur(3rem);
-  opacity: 0;
-}
-
-.cards-container .card:hover::before {
-  opacity: 1;
-} */

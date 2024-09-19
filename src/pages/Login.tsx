@@ -1,6 +1,7 @@
 import Nav from "../assets/components/Nav/Nav";
 import LoginPage from "../assets/components/LoginPage/LoginPage";
 import LoginBtn from "../assets/components/Buttons/LoginBtn";
+import Footer from "../assets/components/Footer/Footer";
 
 function Login() {
   return (
@@ -9,10 +10,16 @@ function Login() {
         <Nav />
       </header>
 
-      <section className="main login">
-        <LoginPage />
-        <LoginBtn />
-      </section>
+      <main>
+        <section className="login">
+          <LoginPage />
+          <LoginBtn />
+        </section>
+
+        <footer>
+          <Footer />
+        </footer>
+      </main>
     </>
   );
 }

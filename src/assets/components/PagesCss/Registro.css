@@ -8,17 +8,13 @@
   -webkit-background-clip: text;
 }
 
-.main {
-  padding-bottom: 10rem;
-}
-
 .main-img {
   margin-top: 10rem;
   padding-bottom: 10rem;
 }
 
-.main button {
-  margin-top: 7rem;
+main button {
+  margin-block: 7rem;
   display: block;
   margin-inline: auto;
 }
@@ -51,4 +47,8 @@ svg #check_2 #Vector_9 {
     filter: brightness(2) drop-shadow(0 0 1rem #009d53)
       drop-shadow(0 0 1rem #009d53);
   }
+}
+
+.ouv-container {
+  margin-bottom: 10rem;
 }

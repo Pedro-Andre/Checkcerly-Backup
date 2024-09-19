@@ -1,9 +1,8 @@
-import LoginBtn2 from "../assets/components/Buttons/LoginBtn2";
 import Footer from "../assets/components/Footer/Footer";
 import Nav from "../assets/components/Nav/Nav";
-import RegistroPage from "../assets/components/RegistroPage/RegistroPage";
+import ListaPage from "../assets/components/ListaPage/ListaPage";
 
-function Registro() {
+function ListaParticipantes() {
   return (
     <>
       <header>
@@ -11,9 +10,8 @@ function Registro() {
       </header>
 
       <main>
-        <section className="registro-section">
-          <RegistroPage />
-          <LoginBtn2 />
+        <section className="list-container">
+          <ListaPage />
         </section>
 
         <footer>
@@ -24,4 +22,4 @@ function Registro() {
   );
 }
 
-export default Registro;
+export default ListaParticipantes;

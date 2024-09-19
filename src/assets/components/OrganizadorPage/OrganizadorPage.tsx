@@ -3,20 +3,20 @@ import CreateAcc from "../Buttons/CreateAcc";
 function OrganizadorPage() {
   return (
     <>
-      <div className="container">
+      <div className="container org-container">
         <p className="container-title">
           Registrando-se como: <span>Organizador de Eventos</span>
         </p>
         <svg
           width="100%"
-          height="80rem"
+          height="65rem"
           xmlns="http://www.w3.org/2000/svg"
           className="svg-container"
         >
           <rect
             rx="20"
             width="100%"
-            height="80rem"
+            height="65rem"
             x="-0"
             y="0"
             stroke="url(#paint0_linear_227_259)"

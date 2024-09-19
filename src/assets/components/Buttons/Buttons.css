@@ -22,6 +22,7 @@
   background: transparent;
 }
 
+/* 
 .theme-btn {
   width: 8rem;
   height: 4rem;
@@ -30,7 +31,7 @@
   border: 0.3rem solid var(--clr-black-300);
   position: relative;
   cursor: pointer;
-}
+} */
 
 .moon {
   position: absolute;

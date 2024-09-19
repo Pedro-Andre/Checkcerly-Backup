@@ -1,6 +1,6 @@
 function CreateEventBtn() {
   return (
-    <button className="btn">
+    <button className="btn create-btn">
       <a href="#">Criar Evento</a>
     </button>
   );

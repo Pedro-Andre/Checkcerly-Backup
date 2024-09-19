@@ -13,7 +13,7 @@ function Nav() {
           <div className="navlinks">
             <Link to={"/home"}>Home</Link>
             <Link to={"/criar-evento"}>Criar Evento</Link>
-            <Link to={"/historico-eventos"}>Histórico de Eventos</Link>
+            <Link to={"/lista-participantes"}>Lista de Participantes</Link>
           </div>
           <div className="nav-btns">
             <Link to={"/registro"}>

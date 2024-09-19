@@ -35,15 +35,25 @@ function LoginPage() {
             </linearGradient>
           </defs>
         </svg>
-        <form action="">
+        <form action="" id="login-form">
           <div className="inputs">
             <label htmlFor="">
               Email
-              <input type="email" name="mail" />
+              <input
+                type="email"
+                name="mail"
+                id="login-email"
+                placeholder="Seu email"
+              />
             </label>
             <label htmlFor="">
               Senha
-              <input type="password" name="senha" />
+              <input
+                type="password"
+                name="senha"
+                id="login-pass"
+                placeholder="Sua senha"
+              />
             </label>
           </div>
         </form>

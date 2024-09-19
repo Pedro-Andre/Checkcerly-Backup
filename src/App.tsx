@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import CriarEvento from "./pages/CriarEvento";
-import HistoricoEvents from "./pages/HistoricoEvents";
 import RegistroOrganizador from "./pages/RegistroOrganizador";
 import RegistroOuvinte from "./pages/RegistroOuvinte";
 import LoginPage from "./pages/Login";
 import Registro from "./pages/Registro";
 import EventoCriado from "./pages/EventoCriado";
 import Perfil from "./pages/Perfil";
+import ListaParticipantes from "./pages/ListaParticipantes";
 
 function App() {
   return (
@@ -18,8 +18,8 @@ function App() {
           <Route path="/home" element={<Home />}></Route>
           <Route path="/criar-evento" element={<CriarEvento />}></Route>
           <Route
-            path="/historico-eventos"
-            element={<HistoricoEvents />}
+            path="/lista-participantes"
+            element={<ListaParticipantes />}
           ></Route>
           <Route path="/registro" element={<Registro />}></Route>
           <Route path="/login" element={<LoginPage />}></Route>

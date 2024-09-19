@@ -1,18 +1,11 @@
-.user-info {
+.user-texts {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.6rem 4rem;
-}
-
-.user-info .user-texts {
-  width: 100%;
-  min-height: 35rem;
-  display: flex;
   flex-direction: column;
-  row-gap: 5rem;
-  max-width: 60rem;
+  justify-content: space-between;
+  row-gap: 4rem;
+  padding: 4rem;
+  width: 100%;
 }
 
 .user-texts p {
@@ -22,11 +15,4 @@
 .user-texts span {
   font-size: 2rem;
   color: var(--clr-gray);
-}
-
-.user-info .user-img {
-  width: 33rem;
-  height: 42rem;
-  background: var(--clr-black-300);
-  border-radius: 2rem;
 }
