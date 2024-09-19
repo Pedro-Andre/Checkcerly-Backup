@@ -1,19 +1,26 @@
-.nav {
+.nav-container {
+  width: 100%;
+  max-width: 130rem;
+  height: 7.5rem;
+  position: fixed;
+  top: 1.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  padding-inline: 1.6rem;
+}
+
+.nav-container .nav {
   border: 0.15rem solid var(--clr-black-300);
   background: var(--clr-black-low-op);
   width: 100%;
-  max-width: 130rem;
   height: 7.5rem;
   border-radius: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
   backdrop-filter: blur(2rem);
-  position: fixed;
-  top: 1.6rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 999;
+  box-shadow: 0 2rem 4rem #00000055;
 }
 
 .nav a {
@@ -49,4 +56,15 @@
   align-items: center;
   flex-wrap: wrap;
   column-gap: 2rem;
+}
+
+.nav .logo {
+  height: 100%;
+  margin-top: 0.5rem;
+  filter: brightness(1.3);
+  transition: all 0.3s;
+}
+
+.nav .logo:hover {
+  scale: 1.05;
 }

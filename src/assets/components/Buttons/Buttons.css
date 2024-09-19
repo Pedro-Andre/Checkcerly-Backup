@@ -53,5 +53,6 @@
 }
 
 .participantes-btn:hover {
-  scale: 0.2;
+  border: 0.1rem solid transparent;
+  background: var(--clr-primary);
 }

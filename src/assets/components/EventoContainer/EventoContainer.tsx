@@ -34,33 +34,57 @@ function EventoContainer() {
             </linearGradient>
           </defs>
         </svg>
-        <form action="">
+        <form action="" id="event-form">
           <div className="inputs">
             <label htmlFor="">
               Nome do Evento
-              <input type="text" name="nome" />
+              <input
+                required
+                type="text"
+                name="nome-evento"
+                id="event-name"
+                placeholder="Nome do evento"
+              />
             </label>
             <label htmlFor="">
               Assunto
-              <input type="text" name="nome" />
+              <input
+                required
+                type="text"
+                name="nome"
+                id="event-theme"
+                placeholder="Assunto do evento"
+              />
             </label>
             <label htmlFor="">
               Local
-              <input type="text" name="local" />
+              <input
+                required
+                type="text"
+                name="local"
+                id="event-local"
+                placeholder="Local do evento"
+              />
             </label>
             <div className="date-inputs">
               <label htmlFor="">
                 Data (início)
-                <input type="date" name="inicio" id="inicio-evento" />
+                <input type="date" name="inicio" id="event-start" required />
               </label>
               <label htmlFor="">
                 Data (término)
-                <input type="date" name="fim" id="fim-evento" />
+                <input type="date" name="fim" id="event-end" required />
               </label>
             </div>
             <label htmlFor="">
               Hora (início / término)
-              <input type="text" name="hora" />
+              <input
+                required
+                type="text"
+                name="hora"
+                id="event-hour"
+                placeholder="Hora do evento"
+              />
             </label>
           </div>
         </form>

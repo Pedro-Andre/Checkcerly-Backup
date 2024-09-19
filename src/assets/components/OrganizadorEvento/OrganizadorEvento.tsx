@@ -34,19 +34,37 @@ function OrganizadorEvento() {
             </linearGradient>
           </defs>
         </svg>
-        <form action="">
+        <form action="" id="org-form">
           <div className="inputs">
             <label htmlFor="">
               Nome
-              <input type="text" name="nome" />
+              <input
+                required
+                type="text"
+                name="nome"
+                id="org-name"
+                placeholder="Seu nome"
+              />
             </label>
             <label htmlFor="">
               Disciplina
-              <input type="text" name="nome" />
+              <input
+                required
+                type="text"
+                name="disciplina"
+                id="org-disc"
+                placeholder="Sua disciplina"
+              />
             </label>
             <label htmlFor="">
               Email
-              <input type="email" name="mail" />
+              <input
+                required
+                type="email"
+                name="mail"
+                id="org-email"
+                placeholder="Seu email"
+              />
             </label>
           </div>
         </form>

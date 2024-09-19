@@ -36,27 +36,47 @@ function OrganizadorPage() {
             </linearGradient>
           </defs>
         </svg>
-        <form action="">
+        <form action="" id="org-login-form">
           <div className="inputs">
             <label htmlFor="">
               Nome
-              <input type="text" name="nome" />
+              <input
+                required
+                type="text"
+                name="nome"
+                id="org-login-name"
+                placeholder="Seu nome"
+              />
             </label>
             <label htmlFor="">
               Email
-              <input type="text" name="nome" />
+              <input
+                required
+                type="text"
+                name="nome"
+                id="org-login-email"
+                placeholder="Seu email"
+              />
             </label>
             <label htmlFor="">
               Senha
-              <input type="password" name="senha" />
-            </label>
-            <label htmlFor="">
-              Confirmar Senha
-              <input type="password" name="check-senha" />
+              <input
+                required
+                type="password"
+                name="senha"
+                id="org-login-senha"
+                placeholder="Sua senha"
+              />
             </label>
             <label htmlFor="">
               Nº de Celular
-              <input type="password" name="senha" />
+              <input
+                required
+                type="tel"
+                name="senha"
+                id="org-login-cel"
+                placeholder="Seu número de celular"
+              />
             </label>
           </div>
         </form>

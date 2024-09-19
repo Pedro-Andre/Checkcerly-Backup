@@ -37,38 +37,42 @@ function EventList() {
           </defs>
         </svg>
         <table>
-          <tr>
-            <th>Nome do Evento</th>
-            <th>Data</th>
-            <th>Local</th>
-            <th>Registros</th>
-            <th>Ações</th>
-          </tr>
-          <tr>
-            <td>evento de fulaninho</td>
-            <td>00/00/0000</td>
-            <td>Uniceplac</td>
-            <td>100</td>
-            <td className="event-list-btn">
-              <ParticipantsBtn />
-            </td>
-          </tr>
-          <tr>
-            <th>Nome do Evento</th>
-            <th>Data</th>
-            <th>Local</th>
-            <th>Registros</th>
-            <th>Ações</th>
-          </tr>
-          <tr>
-            <td>evento de fulaninho</td>
-            <td>00/00/0000</td>
-            <td>Uniceplac</td>
-            <td>100</td>
-            <td className="event-list-btn">
-              <ParticipantsBtn />
-            </td>
-          </tr>
+          <thead>
+            <tr>
+              <th>Nome do Evento</th>
+              <th>Data</th>
+              <th>Local</th>
+              <th>Registros</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>evento de fulaninho</td>
+              <td>00/00/0000</td>
+              <td>Uniceplac</td>
+              <td>100</td>
+              <td className="event-list-btn">
+                <ParticipantsBtn />
+              </td>
+            </tr>
+            <tr>
+              <th>Nome do Evento</th>
+              <th>Data</th>
+              <th>Local</th>
+              <th>Registros</th>
+              <th>Ações</th>
+            </tr>
+            <tr>
+              <td>evento de fulaninho</td>
+              <td>00/00/0000</td>
+              <td>Uniceplac</td>
+              <td>100</td>
+              <td className="event-list-btn">
+                <ParticipantsBtn />
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </>

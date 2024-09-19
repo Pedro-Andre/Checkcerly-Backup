@@ -13,6 +13,7 @@ section {
 main,
 .main {
   position: relative;
+  padding-bottom: 5rem;
 }
 
 a {
@@ -52,4 +53,8 @@ main::after,
   display: block;
   margin-inline: auto;
   margin-top: 5rem;
+}
+
+.list-container {
+  margin-bottom: 60rem;
 }

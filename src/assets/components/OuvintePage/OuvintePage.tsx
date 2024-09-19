@@ -36,27 +36,47 @@ function OuvintePage() {
             </linearGradient>
           </defs>
         </svg>
-        <form action="">
+        <form action="" id="ouv-form">
           <div className="inputs">
             <label htmlFor="">
               Nome
-              <input type="text" name="nome" />
+              <input
+                required
+                type="text"
+                name="nome"
+                id="ouv-name"
+                placeholder="Seu nome"
+              />
             </label>
             <label htmlFor="">
               Email
-              <input type="text" name="nome" />
+              <input
+                required
+                type="email"
+                name="nome"
+                id="ouv-email"
+                placeholder="Seu email"
+              />
             </label>
             <label htmlFor="">
               Senha
-              <input type="password" name="senha" />
-            </label>
-            <label htmlFor="">
-              Confirmar Senha
-              <input type="password" name="check-senha" />
+              <input
+                required
+                type="password"
+                name="senha"
+                id="ouv-senha"
+                placeholder="Sua senha"
+              />
             </label>
             <label htmlFor="">
               Nº de Celular
-              <input type="password" name="senha" />
+              <input
+                required
+                type="tel"
+                name="senha"
+                id="ouv-cel"
+                placeholder="Seu número de celular"
+              />
             </label>
           </div>
         </form>
