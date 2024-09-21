@@ -68,3 +68,104 @@
 .nav .logo:hover {
   scale: 1.05;
 }
+
+/* NAV MOBILE */
+.nav-mobile-container {
+  display: none;
+  height: 8rem;
+  width: 95%;
+  position: fixed;
+  right: 1.6rem;
+  z-index: 999;
+}
+
+.nav-mobile-container .menu-icon {
+  width: 4rem;
+  height: 0.4rem;
+  bottom: 50%;
+  font-size: 4rem;
+  right: 1.6rem;
+  position: absolute;
+  background: var(--clr-grad-orange);
+  cursor: pointer;
+  /* pointer-events: all; */
+  z-index: 9999;
+}
+
+.nav-mobile-container .menu-icon::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--clr-grad-orange);
+  top: -1rem;
+  position: absolute;
+}
+
+.nav-mobile-container .menu-icon::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--clr-grad-orange);
+  top: 1rem;
+  position: absolute;
+}
+
+@media (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-container {
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  /* NAV MOBILE */
+  .nav-mobile-container {
+    display: block;
+    background: var(--clr-black);
+    border: 0.15rem solid var(--clr-black-300);
+    border-radius: 2rem;
+    margin-inline: auto;
+  }
+
+  .nav-mobile {
+    background: var(--clr-black-low-op);
+    border-right: 0.15rem solid var(--clr-black-300);
+    border-bottom: 0.15rem solid var(--clr-black-300);
+    border-left: 0.15rem solid var(--clr-black-300);
+    border-radius: 2rem;
+    height: calc(100vh - 3rem);
+    width: 30rem;
+    margin-left: auto;
+    box-shadow: -2rem 0 4rem #00000055;
+    backdrop-filter: blur(2rem);
+    display: none;
+  }
+
+  .nav-mobile.show-nav {
+    display: block;
+  }
+
+  .nav-mobile-container svg {
+    left: 1.6rem;
+    top: 2rem;
+    position: absolute;
+    margin-top: 0.3rem;
+  }
+
+  .nav-mobile .navlinks {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2rem;
+  }
+
+  .nav-mobile button {
+    display: block;
+    margin-inline: auto;
+  }
+}

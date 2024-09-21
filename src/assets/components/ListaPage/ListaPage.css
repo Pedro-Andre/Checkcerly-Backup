@@ -65,3 +65,8 @@
 .list-container {
   margin-top: 2rem;
 }
+
+#list-email-value {
+  width: 100%;
+  max-width: 27%;
+}

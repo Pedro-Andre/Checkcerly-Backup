@@ -1,5 +1,5 @@
 import EventQrCodeBtn from "../Buttons/EventQrCodeBtn";
-import ParticipantsBtn from "../Buttons/ParticipantsBtn";
+// import ParticipantsBtn from "../Buttons/ParticipantsBtn";
 import "./ListaPage.css";
 
 function ListaPage() {
@@ -68,88 +68,88 @@ function ListaPage() {
         <div className="scroll-container">
           <table>
             <tr>
-              <th>Nome do Evento</th>
-              <th>Data</th>
+              <th>Nome do participante</th>
+              <th>Email</th>
               <th>Local</th>
               <th>Registros</th>
               <th>Ações</th>
             </tr>
             <tr>
-              <td>evento de fulaninho</td>
-              <td>00/00/0000</td>
+              <td>Nome do participante</td>
+              <td id="list-email-value">email_do_fulando@msamd.com</td>
               <td>Uniceplac</td>
               <td>100</td>
               <td className="event-list-btn">
                 <EventQrCodeBtn />
-                <ParticipantsBtn />
+                {/* <ParticipantsBtn /> */}
               </td>
             </tr>
             <tr>
-              <th>Nome do Evento</th>
-              <th>Data</th>
+              <th>Nome do participante</th>
+              <th>Email</th>
               <th>Local</th>
               <th>Registros</th>
               <th>Ações</th>
             </tr>
             <tr>
-              <td>evento de fulaninho</td>
-              <td>00/00/0000</td>
+              <td>Nome do participante</td>
+              <td id="list-email-value">email_do_fulando@msamd.com</td>
               <td>Uniceplac</td>
               <td>100</td>
               <td className="event-list-btn">
                 <EventQrCodeBtn />
-                <ParticipantsBtn />
+                {/* <ParticipantsBtn /> */}
               </td>
             </tr>
             <tr>
-              <th>Nome do Evento</th>
-              <th>Data</th>
+              <th>Nome do participante</th>
+              <th>Email</th>
               <th>Local</th>
               <th>Registros</th>
               <th>Ações</th>
             </tr>
             <tr>
-              <td>evento de fulaninho</td>
-              <td>00/00/0000</td>
+              <td>Nome do participante</td>
+              <td id="list-email-value">email_do_fulando@msamd.com</td>
               <td>Uniceplac</td>
               <td>100</td>
               <td className="event-list-btn">
                 <EventQrCodeBtn />
-                <ParticipantsBtn />
+                {/* <ParticipantsBtn /> */}
               </td>
             </tr>
             <tr>
-              <th>Nome do Evento</th>
-              <th>Data</th>
+              <th>Nome do participante</th>
+              <th>Email</th>
               <th>Local</th>
               <th>Registros</th>
               <th>Ações</th>
             </tr>
             <tr>
-              <td>evento de fulaninho</td>
-              <td>00/00/0000</td>
+              <td>Nome do participante</td>
+              <td id="list-email-value">email_do_fulando@msamd.com</td>
               <td>Uniceplac</td>
               <td>100</td>
               <td className="event-list-btn">
                 <EventQrCodeBtn />
-                <ParticipantsBtn />
+                {/* <ParticipantsBtn /> */}
               </td>
             </tr>
             <tr>
-              <th>Nome do Evento</th>
-              <th>Data</th>
+              <th>Nome do participante</th>
+              <th>Email</th>
               <th>Local</th>
               <th>Registros</th>
               <th>Ações</th>
             </tr>
             <tr>
-              <td>evento de fulaninho</td>
-              <td>00/00/0000</td>
+              <td>Nome do participante</td>
+              <td id="list-email-value">email_do_fulando@msamd.com</td>
               <td>Uniceplac</td>
               <td>100</td>
               <td className="event-list-btn">
                 <EventQrCodeBtn />
-                <ParticipantsBtn />
+                {/* <ParticipantsBtn /> */}
               </td>
             </tr>
           </table>

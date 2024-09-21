@@ -1,6 +1,5 @@
 import Nav from "../assets/components/Nav/Nav";
 import PerfilPage from "../assets/components/PerfilPage/PerfilPage";
-import EventList from "../assets/components/EventsList/EventList";
 import Footer from "../assets/components/Footer/Footer";
 
 function Perfil() {
@@ -10,10 +9,9 @@ function Perfil() {
         <Nav />
       </header>
 
-      <main className="main-2">
+      <main>
         <section className="list-container">
           <PerfilPage />
-          <EventList />
         </section>
 
         <footer>

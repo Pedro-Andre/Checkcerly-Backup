@@ -4,7 +4,7 @@ import "./Buttons.css";
 function ParticipantsBtn() {
   return (
     <>
-      <Link to={"/participantes"} className="participantes-btn">
+      <Link to={"/lista-participantes"} className="participantes-btn">
         Participantes
       </Link>
     </>
