@@ -1,7 +1,38 @@
 import { Link } from "react-router-dom";
+import { ChangeEvent, useState } from "react";
 import "./LoginPage.css";
+import LoginBtn from "../Buttons/LoginBtn";
 
 function LoginPage() {
+  // const LoginForm = () => {
+  //   const [loginFormData, setLoginFormData] = useState({
+  //     nome: '',
+  //     senha: ''
+  //   });
+
+  //   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
+  //     const { name, value } = event.target;
+  //     setLoginFormData({
+  //       ...loginFormData,
+  //       [name]: value
+  //     });
+  //   };
+
+  // const handleForm = async (e: React.FormEvent<HTMLFormElement>) => {
+  //   try {
+  //     e.preventDefault();
+  //     const response = await fetch('', {
+  //       method: "POST",
+  //       body: JSON.stringify(loginFormData)
+  //     });
+  //     const json = await response.json();
+  //     console.log(json)
+  //   }
+  //   catch (err){
+
+  //   }
+  // }
+
   return (
     <>
       <div className="container">
@@ -44,6 +75,8 @@ function LoginPage() {
                 name="mail"
                 id="login-email"
                 placeholder="Seu email"
+                // onChange={handleInputChange}
+                // value={loginFormData.nome}
               />
             </label>
             <label htmlFor="">
@@ -61,6 +94,7 @@ function LoginPage() {
           Esqueceu a senha? Clique aqui para redefinir
         </Link>
       </div>
+      <LoginBtn />
     </>
   );
 }
