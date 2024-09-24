@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 function LoginBtn() {
   return (
-    <button className="btn">
-      <Link to={"/registro"}>Entrar</Link>
-    </button>
+    <Link to={"/registro"}>
+      <button className="body-btn ">Entrar</button>
+    </Link>
   );
 }
 

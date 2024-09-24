@@ -36,7 +36,7 @@ function EventoContainer() {
         </svg>
         <form action="" id="event-form">
           <div className="inputs">
-            <label htmlFor="">
+            <label htmlFor="event-name">
               Nome do Evento
               <input
                 required
@@ -46,7 +46,7 @@ function EventoContainer() {
                 placeholder="Nome do evento"
               />
             </label>
-            <label htmlFor="">
+            <label htmlFor="event-theme">
               Assunto
               <input
                 required
@@ -56,7 +56,7 @@ function EventoContainer() {
                 placeholder="Assunto do evento"
               />
             </label>
-            <label htmlFor="">
+            <label htmlFor="event-local">
               Local
               <input
                 required
@@ -67,16 +67,16 @@ function EventoContainer() {
               />
             </label>
             <div className="date-inputs">
-              <label htmlFor="">
+              <label htmlFor="event-start">
                 Data (início)
                 <input type="date" name="inicio" id="event-start" required />
               </label>
-              <label htmlFor="">
+              <label htmlFor="event-end">
                 Data (término)
                 <input type="date" name="fim" id="event-end" required />
               </label>
             </div>
-            <label htmlFor="">
+            <label htmlFor="event-hour">
               Hora (início / término)
               <input
                 required

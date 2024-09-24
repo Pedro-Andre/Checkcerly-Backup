@@ -38,6 +38,10 @@ main button {
   max-width: 60rem;
 }
 
+.event-img-container a {
+  margin-block: 2rem;
+}
+
 svg #check_2 #Vector_9 {
   animation: check 1.8s linear infinite alternate;
 }

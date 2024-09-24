@@ -1,6 +1,5 @@
 import "./HeroSection.css";
 import CreateEventBtn from "../Buttons/CreateEventBtn";
-import { Link } from "react-router-dom";
 import HeroImg from "../imgs/HeroImg";
 
 function HeroSection() {
@@ -11,9 +10,7 @@ function HeroSection() {
           Planeje e Gerencie seus eventos de forma <span>fácil</span> e{" "}
           <span>simplificada</span>.
         </h3>
-        <Link to={"/criar-evento"}>
-          <CreateEventBtn />
-        </Link>
+        <CreateEventBtn />
       </div>
       <div className="hero-img">
         <HeroImg></HeroImg>

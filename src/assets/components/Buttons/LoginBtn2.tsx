@@ -3,9 +3,9 @@ import "./Buttons.css";
 
 function LoginBtn2() {
   return (
-    <button className="btn btn-2">
-      <Link to={"/login"}>Ja tenho uma conta</Link>
-    </button>
+    <Link to="/login">
+      <button className="body-btn">Ja tenho uma conta</button>
+    </Link>
   );
 }
 

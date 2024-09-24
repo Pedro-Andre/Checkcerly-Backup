@@ -1,4 +1,4 @@
-import CreateAcc from "../Buttons/CreateAcc";
+import CreateAcc from "../Buttons/CreateAccBtn";
 
 function OrganizadorPage() {
   return (
@@ -38,7 +38,7 @@ function OrganizadorPage() {
         </svg>
         <form action="" id="org-login-form">
           <div className="inputs">
-            <label htmlFor="">
+            <label htmlFor="org-login-name">
               Nome
               <input
                 required
@@ -48,7 +48,7 @@ function OrganizadorPage() {
                 placeholder="Seu nome"
               />
             </label>
-            <label htmlFor="">
+            <label htmlFor="org-login-email">
               Email
               <input
                 required
@@ -58,7 +58,7 @@ function OrganizadorPage() {
                 placeholder="Seu email"
               />
             </label>
-            <label htmlFor="">
+            <label htmlFor="org-login-senha">
               Senha
               <input
                 required
@@ -68,7 +68,7 @@ function OrganizadorPage() {
                 placeholder="Sua senha"
               />
             </label>
-            <label htmlFor="">
+            <label htmlFor="org-login-cel">
               Nº de Celular
               <input
                 required

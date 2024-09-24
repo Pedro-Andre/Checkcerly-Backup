@@ -1,6 +1,5 @@
 import CreateEventBtn from "../Buttons/CreateEventBtn";
 import "./BottomSection.css";
-import { Link } from "react-router-dom";
 
 function BottomSection() {
   return (
@@ -42,9 +41,7 @@ function BottomSection() {
               Vamos te ajudar a criar as informações do seu evento de forma
               simplificada
             </span>
-            <Link to="/criar-evento">
-              <CreateEventBtn />
-            </Link>
+            <CreateEventBtn />
           </div>
         </div>
         <div className="orb-1"></div>

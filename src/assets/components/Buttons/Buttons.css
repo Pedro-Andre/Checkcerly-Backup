@@ -1,24 +1,57 @@
-.btn {
+/* NAV BUTTON  */
+.body-btn {
   cursor: pointer;
   position: relative;
-  background: var(--clr-grad-orange);
   border: none;
-  padding: 1.5rem 0.3rem;
+  padding: 1rem 3rem;
+  border-radius: 0.8rem;
+  font-size: 2rem;
+  color: var(--clr-white);
+  font-family: var(--font);
+  background: var(--clr-black);
+  transition: all 0.2s linear;
+}
+
+.body-btn a {
+  background: var(--clr-grad-orange);
+  padding: 0.35rem 0.3rem;
   border-radius: 1rem;
 }
 
-.btn a {
-  color: var(--clr-white);
-  background: var(--clr-black);
-  padding: 1.2rem 3.6rem;
-  border-radius: 0.8rem;
-  font-family: var(--font);
-  transition: 0.2s linear;
-  font-style: italic;
-  font-size: 2rem;
+.body-btn a:hover .btn {
+  background: var(--clr-grad-orange);
+  background: transparent;
 }
 
-.btn a:hover {
+/* OTHERs BUTTONS CSS */
+a > .body-btn {
+  cursor: pointer;
+  position: relative;
+  border: none;
+  padding: 1.5rem 3rem;
+  font-size: 2rem;
+  color: var(--clr-white);
+  font-family: var(--font);
+  transition: all 0.2s linear;
+  background: var(--clr-grad-orange);
+  border-radius: 1rem;
+  z-index: 2;
+}
+
+a > .body-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0.35rem 0.3rem;
+  border-radius: 1rem;
+  z-index: -1;
+  transition: all 0.2 linear;
+  background: var(--clr-black);
+  opacity: 1;
+}
+
+a > .body-btn:hover::before {
+  transition: all 0.2s linear;
+  opacity: 0.5;
   background: transparent;
 }
 
@@ -32,7 +65,7 @@
   position: relative;
   cursor: pointer;
 } */
-
+/* 
 .moon {
   position: absolute;
   right: 0.5rem;
@@ -41,7 +74,7 @@
   background: var(--clr-black-300);
   padding: 0.3rem;
   border-radius: 50%;
-}
+} */
 
 .participantes-btn {
   background: var(--clr-black);

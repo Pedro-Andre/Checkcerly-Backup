@@ -3,11 +3,9 @@ import "./Buttons.css";
 
 function EventQrCodeBtn() {
   return (
-    <>
-      <Link to={"/participantes"} className="participantes-btn">
-        Qr-code
-      </Link>
-    </>
+    <Link to="/qr-code" className="participantes-btn">
+      Qr-code
+    </Link>
   );
 }
 

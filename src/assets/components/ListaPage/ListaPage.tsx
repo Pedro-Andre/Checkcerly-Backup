@@ -15,7 +15,7 @@ function ListaPage() {
           <p className="container-title events-title list-title">
             Participantes <span>(0)</span>
           </p>
-          <label htmlFor="" className="search-container">
+          <label htmlFor="list-search" className="search-container">
             <svg
               width="34"
               height="34"
@@ -67,91 +67,93 @@ function ListaPage() {
         </svg>
         <div className="scroll-container">
           <table>
-            <tr>
-              <th>Nome do participante</th>
-              <th>Email</th>
-              <th>Local</th>
-              <th>Registros</th>
-              <th>Ações</th>
-            </tr>
-            <tr>
-              <td>Nome do participante</td>
-              <td id="list-email-value">email_do_fulando@msamd.com</td>
-              <td>Uniceplac</td>
-              <td>100</td>
-              <td className="event-list-btn">
-                <EventQrCodeBtn />
-                {/* <ParticipantsBtn /> */}
-              </td>
-            </tr>
-            <tr>
-              <th>Nome do participante</th>
-              <th>Email</th>
-              <th>Local</th>
-              <th>Registros</th>
-              <th>Ações</th>
-            </tr>
-            <tr>
-              <td>Nome do participante</td>
-              <td id="list-email-value">email_do_fulando@msamd.com</td>
-              <td>Uniceplac</td>
-              <td>100</td>
-              <td className="event-list-btn">
-                <EventQrCodeBtn />
-                {/* <ParticipantsBtn /> */}
-              </td>
-            </tr>
-            <tr>
-              <th>Nome do participante</th>
-              <th>Email</th>
-              <th>Local</th>
-              <th>Registros</th>
-              <th>Ações</th>
-            </tr>
-            <tr>
-              <td>Nome do participante</td>
-              <td id="list-email-value">email_do_fulando@msamd.com</td>
-              <td>Uniceplac</td>
-              <td>100</td>
-              <td className="event-list-btn">
-                <EventQrCodeBtn />
-                {/* <ParticipantsBtn /> */}
-              </td>
-            </tr>
-            <tr>
-              <th>Nome do participante</th>
-              <th>Email</th>
-              <th>Local</th>
-              <th>Registros</th>
-              <th>Ações</th>
-            </tr>
-            <tr>
-              <td>Nome do participante</td>
-              <td id="list-email-value">email_do_fulando@msamd.com</td>
-              <td>Uniceplac</td>
-              <td>100</td>
-              <td className="event-list-btn">
-                <EventQrCodeBtn />
-                {/* <ParticipantsBtn /> */}
-              </td>
-            </tr>
-            <tr>
-              <th>Nome do participante</th>
-              <th>Email</th>
-              <th>Local</th>
-              <th>Registros</th>
-              <th>Ações</th>
-            </tr>
-            <tr>
-              <td>Nome do participante</td>
-              <td id="list-email-value">email_do_fulando@msamd.com</td>
-              <td>Uniceplac</td>
-              <td>100</td>
-              <td className="event-list-btn">
-                <EventQrCodeBtn />
-                {/* <ParticipantsBtn /> */}
-              </td>
-            </tr>
+            <tbody>
+              <tr>
+                <th>Nome do participante</th>
+                <th>Email</th>
+                <th>Local</th>
+                <th>Registros</th>
+                <th>Ações</th>
+              </tr>
+              <tr>
+                <td>Nome do participante</td>
+                <td id="list-email-value">email_do_fulando@msamd.com</td>
+                <td>Uniceplac</td>
+                <td>100</td>
+                <td className="event-list-btn">
+                  <EventQrCodeBtn />
+                  {/* <ParticipantsBtn /> */}
+                </td>
+              </tr>
+              <tr>
+                <th>Nome do participante</th>
+                <th>Email</th>
+                <th>Local</th>
+                <th>Registros</th>
+                <th>Ações</th>
+              </tr>
+              <tr>
+                <td>Nome do participante</td>
+                <td id="list-email-value">email_do_fulando@msamd.com</td>
+                <td>Uniceplac</td>
+                <td>100</td>
+                <td className="event-list-btn">
+                  <EventQrCodeBtn />
+                  {/* <ParticipantsBtn /> */}
+                </td>
+              </tr>
+              <tr>
+                <th>Nome do participante</th>
+                <th>Email</th>
+                <th>Local</th>
+                <th>Registros</th>
+                <th>Ações</th>
+              </tr>
+              <tr>
+                <td>Nome do participante</td>
+                <td id="list-email-value">email_do_fulando@msamd.com</td>
+                <td>Uniceplac</td>
+                <td>100</td>
+                <td className="event-list-btn">
+                  <EventQrCodeBtn />
+                  {/* <ParticipantsBtn /> */}
+                </td>
+              </tr>
+              <tr>
+                <th>Nome do participante</th>
+                <th>Email</th>
+                <th>Local</th>
+                <th>Registros</th>
+                <th>Ações</th>
+              </tr>
+              <tr>
+                <td>Nome do participante</td>
+                <td id="list-email-value">email_do_fulando@msamd.com</td>
+                <td>Uniceplac</td>
+                <td>100</td>
+                <td className="event-list-btn">
+                  <EventQrCodeBtn />
+                  {/* <ParticipantsBtn /> */}
+                </td>
+              </tr>
+              <tr>
+                <th>Nome do participante</th>
+                <th>Email</th>
+                <th>Local</th>
+                <th>Registros</th>
+                <th>Ações</th>
+              </tr>
+              <tr>
+                <td>Nome do participante</td>
+                <td id="list-email-value">email_do_fulando@msamd.com</td>
+                <td>Uniceplac</td>
+                <td>100</td>
+                <td className="event-list-btn">
+                  <EventQrCodeBtn />
+                  {/* <ParticipantsBtn /> */}
+                </td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>

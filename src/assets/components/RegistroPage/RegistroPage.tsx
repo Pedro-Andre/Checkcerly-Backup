@@ -1,4 +1,5 @@
 import "./RegistroPage.css";
+import LoginBtn2 from "../Buttons/LoginBtn2";
 import { Link } from "react-router-dom";
 
 function RegistroPage() {
@@ -27,6 +28,8 @@ function RegistroPage() {
             </div>
           </Link>
         </div>
+
+        <LoginBtn2 />
       </div>
     </>
   );

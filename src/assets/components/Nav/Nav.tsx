@@ -3,7 +3,7 @@ import LoginBtn from "../Buttons/LoginBtn";
 // import ThemeBtn from "../Buttons/ThemeBtn";
 import Logo from "../imgs/Logo";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function Nav() {
   // nav mobile function
@@ -24,14 +24,12 @@ function Nav() {
         <nav className="nav">
           <Logo />
           <div className="navlinks">
-            <Link to={"/home"}>Home</Link>
-            <Link to={"/criar-evento"}>Criar Evento</Link>
-            <Link to={"/lista-participantes"}>Lista de Participantes</Link>
+            <a href={"/home"}>Home</a>
+            <a href={"/criar-evento"}>Criar Evento</a>
+            <a href={"/lista-participantes"}>Lista de Participantes</a>
           </div>
           <div className="nav-btns">
-            <Link to={"/registro"}>
-              <LoginBtn />
-            </Link>
+            <LoginBtn />
             {/* <ThemeBtn/ > */}
           </div>
         </nav>
@@ -42,13 +40,11 @@ function Nav() {
         <div className="menu-icon"></div>
         <nav className="nav-mobile">
           <div className="navlinks">
-            <Link to={"/home"}>Home</Link>
-            <Link to={"/criar-evento"}>Criar Evento</Link>
-            <Link to={"/lista-participantes"}>Lista de Participantes</Link>
+            <a href={"/home"}>Home</a>
+            <a href={"/criar-evento"}>Criar Evento</a>
+            <a href={"/lista-participantes"}>Lista de Participantes</a>
           </div>
-          <Link to={"/registro"}>
-            <LoginBtn />
-          </Link>
+          <LoginBtn />
         </nav>
       </div>
     </>

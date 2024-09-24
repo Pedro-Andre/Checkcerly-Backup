@@ -1,4 +1,4 @@
-import CreateAcc from "../Buttons/CreateAcc";
+import CreateAcc from "../Buttons/CreateAccBtn";
 
 function OuvintePage() {
   return (
@@ -38,7 +38,7 @@ function OuvintePage() {
         </svg>
         <form action="" id="ouv-form">
           <div className="inputs">
-            <label htmlFor="">
+            <label htmlFor="ouv-name">
               Nome
               <input
                 required
@@ -48,7 +48,7 @@ function OuvintePage() {
                 placeholder="Seu nome"
               />
             </label>
-            <label htmlFor="">
+            <label htmlFor="ouv-email">
               Email
               <input
                 required
@@ -58,7 +58,7 @@ function OuvintePage() {
                 placeholder="Seu email"
               />
             </label>
-            <label htmlFor="">
+            <label htmlFor="ouv-senha">
               Senha
               <input
                 required
@@ -68,7 +68,7 @@ function OuvintePage() {
                 placeholder="Sua senha"
               />
             </label>
-            <label htmlFor="">
+            <label htmlFor="ouv-cel">
               Nº de Celular
               <input
                 required
