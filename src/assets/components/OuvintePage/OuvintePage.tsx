@@ -1,6 +1,35 @@
+import { useState } from "react";
 import CreateAcc from "../Buttons/CreateAccBtn";
 
-function OuvintePage() {
+const OuvintePage: React.FC = () => {
+  let nameInp = document.getElementById("ouvinte-name") as HTMLInputElement;
+  let emailInp = document.getElementById("ouvinte-email") as HTMLInputElement;
+  let passInp = document.getElementById("ouvinte-senha") as HTMLInputElement;
+  let telInp = document.getElementById("ouvinte-cel") as HTMLInputElement;
+
+  const [ouvinteName, setOuvinteName] = useState<string>("");
+  const [ouvinteEmail, setOuvinteEmail] = useState<string>("");
+  const [ouvintePass, setOuvintePass] = useState<string>("");
+  const [ouvinteTel, setOuvinteTel] = useState<string>("");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const data = {
+      ouvinteName,
+      ouvinteEmail,
+      ouvintePass,
+      ouvinteTel,
+    };
+    console.log(data);
+
+    // reset input values
+    nameInp.value = "";
+    emailInp.value = "";
+    passInp.value = "";
+    telInp.value = "";
+  };
+
   return (
     <>
       <div className="container ouv-container">
@@ -36,54 +65,62 @@ function OuvintePage() {
             </linearGradient>
           </defs>
         </svg>
-        <form action="" id="ouv-form">
+        <form action="" id="ouvinte-form" onSubmit={handleSubmit}>
           <div className="inputs">
-            <label htmlFor="ouv-name">
+            <label htmlFor="ouvinte-name">
               Nome
               <input
                 required
                 type="text"
                 name="nome"
-                id="ouv-name"
+                id="ouvinte-name"
                 placeholder="Seu nome"
+                value={ouvinteName}
+                onChange={(e) => setOuvinteName(e.target.value)}
               />
             </label>
-            <label htmlFor="ouv-email">
+            <label htmlFor="ouvinte-email">
               Email
               <input
                 required
                 type="email"
                 name="nome"
-                id="ouv-email"
+                id="ouvinte-email"
                 placeholder="Seu email"
+                value={ouvinteEmail}
+                onChange={(e) => setOuvinteEmail(e.target.value)}
               />
             </label>
-            <label htmlFor="ouv-senha">
+            <label htmlFor="ouvinte-senha">
               Senha
               <input
                 required
                 type="password"
                 name="senha"
-                id="ouv-senha"
+                id="ouvinte-senha"
                 placeholder="Sua senha"
+                value={ouvintePass}
+                onChange={(e) => setOuvintePass(e.target.value)}
               />
             </label>
-            <label htmlFor="ouv-cel">
+            <label htmlFor="ouvinte-cel">
               Nº de Celular
               <input
                 required
                 type="tel"
                 name="senha"
-                id="ouv-cel"
+                id="ouvinte-cel"
                 placeholder="Seu número de celular"
+                value={ouvinteTel}
+                onChange={(e) => setOuvinteTel(e.target.value)}
               />
             </label>
           </div>
+          <CreateAcc />
         </form>
       </div>
-      <CreateAcc />
     </>
   );
-}
+};
 
 export default OuvintePage;
