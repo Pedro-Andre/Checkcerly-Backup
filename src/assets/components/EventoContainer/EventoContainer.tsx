@@ -7,14 +7,14 @@ function EventoContainer() {
         <p className="container-title">Informações do Evento</p>
         <svg
           width="100%"
-          height="80rem"
+          height="95rem"
           xmlns="http://www.w3.org/2000/svg"
-          className="svg-container"
+          className="svg-container event-svg-container"
         >
           <rect
             rx="20"
             width="100%"
-            height="80rem"
+            height="95rem"
             x="-0"
             y="0"
             stroke="url(#paint0_linear_227_259)"

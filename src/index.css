@@ -17,7 +17,31 @@
   --clr-black-low-op-2: #61616126;
   --clr-grad-orange: linear-gradient(90deg, #ff512f 0%, #f09819 100%);
   --clr-grad-green: linear-gradient(90deg, #1e6443 0%, #7fb429 100%);
+  --clr-grad-green-2: linear-gradient(to bottom, #1e6443 0%, #7fb429 100%);
   --clr-grad-stroke: linear-gradient(96deg, #009d53 0%, #f07f3d 100%);
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--clr-black);
+  margin-block: 1.6rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--clr-grad-green-2);
+  border-radius: 10rem;
+}
+
+/* SUPPORT SCROLLBAR */
+@supports (scrollbar-color: black green) {
+  * {
+    scrollbar-color: var(--clr-grad-green-2) var(--clr-black);
+    scrollbar-width: auto;
+  }
 }
 
 * {

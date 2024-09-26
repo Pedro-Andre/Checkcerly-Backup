@@ -27,3 +27,23 @@
   display: block;
   margin-inline: auto;
 }
+
+input[type="date"] {
+  cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  height: 3rem;
+  width: 3rem;
+  opacity: 0.6;
+  filter: invert(1);
+  margin-right: 3rem;
+  border-radius: 1rem;
+  border: 0.1rem solid var(--clr-gray);
+  padding-left: calc(80% - 15rem);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}

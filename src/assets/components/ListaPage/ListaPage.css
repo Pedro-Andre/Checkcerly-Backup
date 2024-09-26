@@ -55,7 +55,7 @@
 
 .list-header .search-input:hover,
 .list-header .search-input:focus {
-  width: 50rem;
+  width: 30rem;
 }
 
 .list-title {
@@ -69,4 +69,26 @@
 #list-email-value {
   width: 100%;
   max-width: 27%;
+}
+
+@media (max-width: 870px) {
+}
+
+@media (max-width: 575px) {
+  .texts-container {
+    text-align: center;
+  }
+
+  .texts-container p {
+    font-size: 2.5rem;
+  }
+
+  .texts-container h3 {
+    font-size: 4rem;
+  }
+
+  .list-header {
+    flex-direction: column;
+    row-gap: 3rem;
+  }
 }

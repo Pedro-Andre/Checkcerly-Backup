@@ -20,7 +20,7 @@
   align-items: center;
   justify-content: space-around;
   backdrop-filter: blur(2rem);
-  box-shadow: 0 2rem 4rem #00000055;
+  box-shadow: 0 2rem 4rem #00000065;
 }
 
 .nav a {
@@ -75,7 +75,8 @@
   height: 8rem;
   width: 95%;
   position: fixed;
-  right: 1.6rem;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 999;
 }
 
@@ -88,7 +89,6 @@
   position: absolute;
   background: var(--clr-grad-orange);
   cursor: pointer;
-  /* pointer-events: all; */
   z-index: 9999;
 }
 
@@ -128,6 +128,7 @@
     border: 0.15rem solid var(--clr-black-300);
     border-radius: 2rem;
     margin-inline: auto;
+    box-shadow: 0 2rem 4rem #00000065;
   }
 
   .nav-mobile {
@@ -139,7 +140,7 @@
     height: calc(100vh - 3rem);
     width: 30rem;
     margin-left: auto;
-    box-shadow: -2rem 0 4rem #00000055;
+    box-shadow: -2rem 0 4rem #00000065;
     backdrop-filter: blur(2rem);
     display: none;
   }
