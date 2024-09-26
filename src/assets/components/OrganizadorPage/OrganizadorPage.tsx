@@ -1,41 +1,62 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import CreateAcc from "../Buttons/CreateAccBtn";
 
 function OrganizadorPage() {
-  let nameInp = document.getElementById(
-    "organizador-login-name"
-  ) as HTMLInputElement;
-  let emailInp = document.getElementById(
-    "organizador-login-email"
-  ) as HTMLInputElement;
-  let passInp = document.getElementById(
-    "organizador-login-senha"
-  ) as HTMLInputElement;
-  let telInp = document.getElementById(
-    "organizador-login-cel"
-  ) as HTMLInputElement;
+  // let nameInp = document.getElementById(
+  //   "organizador-login-name"
+  // ) as HTMLInputElement;
+  // let emailInp = document.getElementById(
+  //   "organizador-login-email"
+  // ) as HTMLInputElement;
+  // let passInp = document.getElementById(
+  //   "organizador-login-senha"
+  // ) as HTMLInputElement;
+  // let telInp = document.getElementById(
+  //   "organizador-login-cel"
+  // ) as HTMLInputElement;
 
-  const [organizadorName, setOrganizadorName] = useState<string>("");
-  const [organizadorEmail, setOrganizadorEmail] = useState<string>("");
-  const [organizadorPass, setOrganizadorPass] = useState<string>("");
-  const [organizadorTel, setOrganizadorTel] = useState<string>("");
+  // const [organizadorName, setOrganizadorName] = useState<string>("");
+  // const [organizadorEmail, setOrganizadorEmail] = useState<string>("");
+  // const [organizadorPass, setOrganizadorPass] = useState<string>("");
+  // const [organizadorTel, setOrganizadorTel] = useState<string>("");
+
+  // function Registrar() {
+  //   fetch("http://localhost:8080/registro/registro-organizador", {
+  //     headers: {
+  //       Accpet: "application/josn",
+  //       "Contetn-Type": "application/json",
+  //     },
+  //     method: "POST",
+  //     body: JSON.stringify({
+  //       organizadorName,
+  //       organizadorEmail,
+  //       organizadorPass,
+  //       organizadorTel,
+  //     }),
+  //   }).then((res) => console.log(res));
+  //   // .catch(res => console.log(res));
+  // }
+
+  // function LimparInputs() {
+  //   nameInp.value = "";
+  //   emailInp.value = "";
+  //   passInp.value = "";
+  //   telInp.value = "";
+  // }
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const data = {
-      organizadorName,
-      organizadorEmail,
-      organizadorPass,
-      organizadorTel,
-    };
-    console.log(data);
+    // const data = {
+    //   organizadorName,
+    //   organizadorEmail,
+    //   organizadorPass,
+    //   organizadorTel,
+    // };
+    // console.log(data);
 
-    // reset input values
-    nameInp.value = "";
-    emailInp.value = "";
-    passInp.value = "";
-    telInp.value = "";
+    // Registrar();
+    // LimparInputs();
   };
 
   return (
@@ -83,8 +104,8 @@ function OrganizadorPage() {
                 name="nome"
                 id="organizador-login-name"
                 placeholder="Seu nome"
-                value={organizadorName}
-                onChange={(e) => setOrganizadorName(e.target.value)}
+                // value={organizadorName}
+                // onChange={(e) => setOrganizadorName(e.target.value)}
               />
             </label>
             <label htmlFor="organizador-login-email">
@@ -95,8 +116,8 @@ function OrganizadorPage() {
                 name="nome"
                 id="organizador-login-email"
                 placeholder="Seu email"
-                value={organizadorEmail}
-                onChange={(e) => setOrganizadorEmail(e.target.value)}
+                // value={organizadorEmail}
+                // onChange={(e) => setOrganizadorEmail(e.target.value)}
               />
             </label>
             <label htmlFor="organizador-login-senha">
@@ -107,8 +128,8 @@ function OrganizadorPage() {
                 name="senha"
                 id="organizador-login-senha"
                 placeholder="Sua senha"
-                value={organizadorPass}
-                onChange={(e) => setOrganizadorPass(e.target.value)}
+                // value={organizadorPass}
+                // onChange={(e) => setOrganizadorPass(e.target.value)}
               />
             </label>
             <label htmlFor="organizador-login-cel">
@@ -119,8 +140,8 @@ function OrganizadorPage() {
                 name="senha"
                 id="organizador-login-cel"
                 placeholder="Seu número de celular"
-                value={organizadorTel}
-                onChange={(e) => setOrganizadorTel(e.target.value)}
+                // value={organizadorTel}
+                // onChange={(e) => setOrganizadorTel(e.target.value)}
               />
             </label>
           </div>

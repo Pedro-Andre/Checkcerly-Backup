@@ -3,9 +3,6 @@
 :root {
   font-optical-sizing: auto;
   --font: "Outfit", sans-serif, system-ui, Avenir, Helvetica, Arial;
-  --fs-a: clamp();
-  --fs-p: clamp();
-  --fs-title: clamp();
 
   --clr-white: #eee;
   --clr-black: #141414;
@@ -21,13 +18,6 @@
   --clr-grad-orange: linear-gradient(90deg, #ff512f 0%, #f09819 100%);
   --clr-grad-green: linear-gradient(90deg, #1e6443 0%, #7fb429 100%);
   --clr-grad-stroke: linear-gradient(96deg, #009d53 0%, #f07f3d 100%);
-
-  color-scheme: light dark;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
@@ -38,6 +28,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -49,4 +40,5 @@ body {
   color: var(--clr-white);
   font-family: var(--font);
   font-size: 1.6rem;
+  overflow-x: hidden;
 }

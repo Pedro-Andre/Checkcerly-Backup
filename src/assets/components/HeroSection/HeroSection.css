@@ -18,8 +18,10 @@
   line-height: 6rem;
 }
 
-.hero-img {
-  flex: 1;
+.hero-img svg {
+  width: 100%;
+  display: block;
+  max-width: 60rem;
   margin-top: 3rem;
 }
 
@@ -29,4 +31,36 @@
 
 .hero-text .body-btn {
   margin: 0;
+}
+
+@media (max-width: 985px) {
+  .hero-section {
+    justify-content: center;
+  }
+
+  .hero-text {
+    min-width: 100%;
+    margin-top: 3rem;
+  }
+
+  .hero-text h3 {
+    min-width: 80%;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .hero-text .body-btn {
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .hero-text h3 {
+    font-size: 3rem;
+  }
+
+  .hero-img svg {
+    margin-top: 0;
+    scale: 1.2;
+  }
 }

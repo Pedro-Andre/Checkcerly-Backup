@@ -1,4 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect, useState } from "react";
+import axios from "axios";
 import Home from "./pages/Home";
 import CriarEvento from "./pages/CriarEvento";
 import RegistroOrganizador from "./pages/RegistroOrganizador";
@@ -10,6 +12,15 @@ import Perfil from "./pages/Perfil";
 import ListaParticipantes from "./pages/ListaParticipantes";
 
 function App() {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:5173/registro/registro-ouvinte")
+      .then((users) => setUsers(users.data))
+      .catch((err) => console.log(err));
+  }, []);
+
   return (
     <>
       <BrowserRouter>

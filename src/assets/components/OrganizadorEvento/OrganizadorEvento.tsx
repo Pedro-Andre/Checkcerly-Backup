@@ -36,7 +36,7 @@ function OrganizadorEvento() {
         </svg>
         <form action="" id="org-form">
           <div className="inputs">
-            <label htmlFor="">
+            <label htmlFor="org-name">
               Nome
               <input
                 required
@@ -46,7 +46,7 @@ function OrganizadorEvento() {
                 placeholder="Seu nome"
               />
             </label>
-            <label htmlFor="">
+            <label htmlFor="org-disc">
               Disciplina
               <input
                 required
@@ -56,7 +56,7 @@ function OrganizadorEvento() {
                 placeholder="Sua disciplina"
               />
             </label>
-            <label htmlFor="">
+            <label htmlFor="org-email">
               Email
               <input
                 required

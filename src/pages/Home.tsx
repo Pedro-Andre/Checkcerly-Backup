@@ -17,7 +17,7 @@ function Home() {
           <HeroSection />
         </section>
 
-        <section>
+        <section className="cards-section">
           <CardsSection />
         </section>
 
