@@ -53,3 +53,34 @@ section .btn-2 {
 .registro-section {
   margin-bottom: 15rem;
 }
+
+@media (max-width: 900px) {
+  .options-container {
+    width: 100%;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    place-items: center;
+  }
+
+  .options-container .option {
+    height: 40rem;
+  }
+
+  .options-container .option:hover {
+    transform: translateY(0);
+    border: 0.15rem solid var(--clr-black-300);
+    box-shadow: 0 0 2rem var(--clr-black-300);
+    filter: brightness(1.5);
+  }
+}
+
+@media (max-width: 475px) {
+  .options-container {
+    grid-template-columns: 1fr;
+  }
+
+  .option p {
+    font-size: 2rem;
+  }
+}

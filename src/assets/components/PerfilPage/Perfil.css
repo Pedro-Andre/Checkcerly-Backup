@@ -82,6 +82,42 @@
 
 .scroll-container {
   height: 68rem;
-  overflow-y: scroll;
+  width: 100%;
   margin-block-start: 4rem;
+  position: relative;
+}
+
+.scroll-container-wrapper {
+  overflow-y: scroll;
+  overflow-x: scroll;
+  height: 68rem;
+  width: 100%;
+  margin-block-start: 4rem;
+}
+
+@media (max-width: 960px) {
+  .scroll-container {
+    width: 150%;
+  }
+
+  .event-list table .list-name,
+  .event-list table .list-email {
+    min-width: 30rem;
+  }
+
+  .event-list table .list-local {
+    min-width: 20rem;
+  }
+
+  .event-list table .event-list-btn {
+    min-width: 20rem;
+    max-width: 20rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .event-list table {
+    zoom: 85%;
+    font-size: 1.8rem;
+  }
 }

@@ -12,3 +12,9 @@
   color: var(--clr-white);
   text-decoration: underline;
 }
+
+@media (max-width: 475px) {
+  .nova-senha {
+    font-size: 1.65rem;
+  }
+}
