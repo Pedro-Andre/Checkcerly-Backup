@@ -18,14 +18,12 @@
   max-width: 85rem;
 }
 
-.event-section {
-  margin-bottom: 15rem;
+.container .body-btn {
+  margin-top: 6rem;
 }
 
-.event-section button {
-  margin-top: 7rem;
-  display: block;
-  margin-inline: auto;
+.event-section {
+  margin-bottom: 15rem;
 }
 
 input[type="date"] {

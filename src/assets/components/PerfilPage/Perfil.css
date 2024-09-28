@@ -83,7 +83,6 @@
 .scroll-container {
   height: 68rem;
   width: 100%;
-  margin-block-start: 4rem;
   position: relative;
 }
 
@@ -92,7 +91,23 @@
   overflow-x: scroll;
   height: 68rem;
   width: 100%;
-  margin-block-start: 4rem;
+}
+.event-list table .event-list-btn-2 {
+  min-width: 30rem;
+}
+
+.event-list table .list-name,
+.event-list table .list-email,
+.event-list table .event-list-btn-2 {
+  min-width: 30rem;
+}
+
+.event-list table .list-date {
+  min-width: 13rem;
+}
+
+.event-list table .list-local {
+  min-width: 20rem;
 }
 
 @media (max-width: 960px) {
@@ -101,7 +116,8 @@
   }
 
   .event-list table .list-name,
-  .event-list table .list-email {
+  .event-list table .list-email,
+  .event-list table .event-list-btn-2 {
     min-width: 30rem;
   }
 
@@ -115,9 +131,26 @@
   }
 }
 
+@media (max-width: 780px) {
+  .event-list table .event-list-btn-2 {
+    min-width: 30rem;
+  }
+}
+
 @media (max-width: 650px) {
   .event-list table {
     zoom: 85%;
     font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 415px) {
+  .user-texts p {
+    font-size: 2.25rem;
+  }
+
+  .user-texts span {
+    font-size: 1.7rem;
+    color: var(--clr-gray);
   }
 }

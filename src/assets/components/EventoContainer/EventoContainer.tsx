@@ -1,4 +1,5 @@
 import "./EventoContainer.css";
+import CreateEventBtn from "../Buttons/CreateEventBtn";
 
 function EventoContainer() {
   return (
@@ -88,6 +89,7 @@ function EventoContainer() {
             </label>
           </div>
         </form>
+        <CreateEventBtn />
       </div>
     </>
   );

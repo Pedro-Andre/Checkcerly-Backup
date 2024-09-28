@@ -22,13 +22,14 @@ main button {
 .main h1 {
   text-align: center;
   font-weight: 400;
-  margin-bottom: 3rem;
+  margin-block: 3rem;
   font-size: 3rem;
 }
 
 .event-img-container {
   display: flex;
   flex-direction: column;
+  row-gap: 5rem;
   align-items: center;
 }
 
@@ -36,10 +37,12 @@ main button {
   width: 100%;
   display: block;
   max-width: 60rem;
+  padding-left: 4rem;
+  /* border: 0.1rem solid #0f0; */
 }
 
 .event-img-container a {
-  margin-block: 2rem;
+  margin-top: -2rem;
 }
 
 svg #check_2 #Vector_9 {
@@ -55,4 +58,18 @@ svg #check_2 #Vector_9 {
 
 .ouv-container {
   margin-bottom: 10rem;
+}
+
+@media (max-width: 500px) {
+  .event-img-container {
+    row-gap: 1rem;
+  }
+
+  .event-img-container a + a {
+    margin-top: 1rem;
+  }
+
+  .event-img-container svg {
+    scale: 1.2;
+  }
 }

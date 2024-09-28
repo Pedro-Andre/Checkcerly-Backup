@@ -82,94 +82,98 @@ function PerfilPage() {
             </linearGradient>
           </defs>
         </svg>
-        <div className="scroll-container">
-          <table>
-            <tr>
-              <th>Nome do Evento</th>
-              <th>Data</th>
-              <th>Local</th>
-              <th>Registros</th>
-              <th>Ações</th>
-            </tr>
-            <tr>
-              <td>evento de fulaninho</td>
-              <td>00/00/0000</td>
-              <td>Uniceplac</td>
-              <td>100</td>
-              <td className="event-list-btn">
-                <EventQrCodeBtn />
-                <ParticipantsBtn />
-              </td>
-            </tr>
-            <tr>
-              <th>Nome do Evento</th>
-              <th>Data</th>
-              <th>Local</th>
-              <th>Registros</th>
-              <th>Ações</th>
-            </tr>
-            <tr>
-              <td>evento de fulaninho</td>
-              <td>00/00/0000</td>
-              <td>Uniceplac</td>
-              <td>100</td>
-              <td className="event-list-btn">
-                <EventQrCodeBtn />
-                <ParticipantsBtn />
-              </td>
-            </tr>
-            <tr>
-              <th>Nome do Evento</th>
-              <th>Data</th>
-              <th>Local</th>
-              <th>Registros</th>
-              <th>Ações</th>
-            </tr>
-            <tr>
-              <td>evento de fulaninho</td>
-              <td>00/00/0000</td>
-              <td>Uniceplac</td>
-              <td>100</td>
-              <td className="event-list-btn">
-                <EventQrCodeBtn />
-                <ParticipantsBtn />
-              </td>
-            </tr>
-            <tr>
-              <th>Nome do Evento</th>
-              <th>Data</th>
-              <th>Local</th>
-              <th>Registros</th>
-              <th>Ações</th>
-            </tr>
-            <tr>
-              <td>evento de fulaninho</td>
-              <td>00/00/0000</td>
-              <td>Uniceplac</td>
-              <td>100</td>
-              <td className="event-list-btn">
-                <EventQrCodeBtn />
-                <ParticipantsBtn />
-              </td>
-            </tr>
-            <tr>
-              <th>Nome do Evento</th>
-              <th>Data</th>
-              <th>Local</th>
-              <th>Registros</th>
-              <th>Ações</th>
-            </tr>
-            <tr>
-              <td>evento de fulaninho</td>
-              <td>00/00/0000</td>
-              <td>Uniceplac</td>
-              <td>100</td>
-              <td className="event-list-btn">
-                <EventQrCodeBtn />
-                <ParticipantsBtn />
-              </td>
-            </tr>
-          </table>
+        <div className="scroll-container-wrapper">
+          <div className="scroll-container">
+            <table>
+              <tbody>
+                <tr>
+                  <th>Nome do Evento</th>
+                  <th>Data</th>
+                  <th>Local</th>
+                  <th>Registros</th>
+                  <th>Ações</th>
+                </tr>
+                <tr>
+                  <td className="list-name">evento de fulaninho sobre</td>
+                  <td className="list-date">00/00/0000</td>
+                  <td className="list-local">Uniceplac</td>
+                  <td>100</td>
+                  <td className="event-list-btn event-list-btn-2">
+                    <EventQrCodeBtn />
+                    <ParticipantsBtn />
+                  </td>
+                </tr>
+                <tr>
+                  <th>Nome do Evento</th>
+                  <th>Data</th>
+                  <th>Local</th>
+                  <th>Registros</th>
+                  <th>Ações</th>
+                </tr>
+                <tr>
+                  <td className="list-name">evento de fulaninho</td>
+                  <td className="list-date">00/00/0000</td>
+                  <td className="list-local">Uniceplac</td>
+                  <td>100</td>
+                  <td className="event-list-btn event-list-btn-2">
+                    <EventQrCodeBtn />
+                    <ParticipantsBtn />
+                  </td>
+                </tr>
+                <tr>
+                  <th>Nome do Evento</th>
+                  <th>Data</th>
+                  <th>Local</th>
+                  <th>Registros</th>
+                  <th>Ações</th>
+                </tr>
+                <tr>
+                  <td className="list-name">evento de fulaninho</td>
+                  <td className="list-date">00/00/0000</td>
+                  <td className="list-local">Uniceplac</td>
+                  <td>100</td>
+                  <td className="event-list-btn event-list-btn-2">
+                    <EventQrCodeBtn />
+                    <ParticipantsBtn />
+                  </td>
+                </tr>
+                <tr>
+                  <th>Nome do Evento</th>
+                  <th>Data</th>
+                  <th>Local</th>
+                  <th>Registros</th>
+                  <th>Ações</th>
+                </tr>
+                <tr>
+                  <td className="list-name">evento de fulaninho</td>
+                  <td className="list-date">00/00/0000</td>
+                  <td className="list-local">Uniceplac</td>
+                  <td>100</td>
+                  <td className="event-list-btn event-list-btn-2">
+                    <EventQrCodeBtn />
+                    <ParticipantsBtn />
+                  </td>
+                </tr>
+                <tr>
+                  <th>Nome do Evento</th>
+                  <th>Data</th>
+                  <th>Local</th>
+                  <th>Registros</th>
+                  <th>Ações</th>
+                </tr>
+                <tr>
+                  <td className="list-name">evento de fulaninho</td>
+                  <td className="list-date">00/00/0000</td>
+                  <td className="list-local">Uniceplac</td>
+                  <td>100</td>
+                  <td className="event-list-btn event-list-btn-2">
+                    <EventQrCodeBtn />
+                    <ParticipantsBtn />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </>
