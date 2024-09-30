@@ -1,6 +1,61 @@
+import { useState } from "react";
 import "./OrganizadorEvento.css";
 
-function OrganizadorEvento() {
+const OrganizadorEvento: React.FC = () => {
+  let orgNameInp = document.getElementById(
+    "organizador-name"
+  ) as HTMLInputElement;
+  let orgDiscInp = document.getElementById(
+    "organizador-email"
+  ) as HTMLInputElement;
+  let orgEmailInp = document.getElementById(
+    "organizador-email"
+  ) as HTMLInputElement;
+
+  const [organizadorName, setOrganizadorName] = useState<string>("");
+  const [organizadorDisc, setOrganizadorDisc] = useState<string>("");
+  const [organizadorEmail, setOrganizadorEmail] = useState<string>("");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const data = {
+      organizadorName,
+      organizadorDisc,
+      organizadorEmail,
+    };
+    console.log(data);
+
+    fetch("http://localhost:8080/events", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
+      body: JSON.stringify({
+        nome: orgNameInp,
+        disciplina: orgDiscInp,
+        email: orgEmailInp,
+      }),
+    })
+      .then((res) => console.log("Status da resposta:", res.status))
+      .then((data) => {
+        console.log("Dados recebidos:", data);
+        try {
+          const jsonData = JSON.stringify(data);
+          console.log(jsonData);
+        } catch (err) {
+          console.log("Erro no parse JSON:", err);
+        }
+      });
+
+    // reset input values
+    orgNameInp.value = "";
+    orgDiscInp.value = "";
+    orgEmailInp.value = "";
+  };
+
   return (
     <>
       <div className="container">
@@ -34,36 +89,42 @@ function OrganizadorEvento() {
             </linearGradient>
           </defs>
         </svg>
-        <form action="" id="org-form">
+        <form action="" id="org-form" onSubmit={handleSubmit}>
           <div className="inputs">
-            <label htmlFor="org-name">
+            <label htmlFor="organizador-name">
               Nome
               <input
                 required
                 type="text"
                 name="nome"
-                id="org-name"
+                id="organizador-name"
                 placeholder="Seu nome"
+                value={organizadorName}
+                onChange={(e) => setOrganizadorName(e.target.value)}
               />
             </label>
-            <label htmlFor="org-disc">
+            <label htmlFor="organizador-disc">
               Disciplina
               <input
                 required
                 type="text"
                 name="disciplina"
-                id="org-disc"
+                id="organizador-disc"
                 placeholder="Sua disciplina"
+                value={organizadorDisc}
+                onChange={(e) => setOrganizadorDisc(e.target.value)}
               />
             </label>
-            <label htmlFor="org-email">
+            <label htmlFor="organizador-email">
               Email
               <input
                 required
                 type="email"
                 name="mail"
-                id="org-email"
+                id="organizador-email"
                 placeholder="Seu email"
+                value={organizadorEmail}
+                onChange={(e) => setOrganizadorEmail(e.target.value)}
               />
             </label>
           </div>
@@ -71,6 +132,6 @@ function OrganizadorEvento() {
       </div>
     </>
   );
-}
+};
 
 export default OrganizadorEvento;

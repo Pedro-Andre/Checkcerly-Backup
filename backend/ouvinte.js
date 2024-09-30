@@ -10,7 +10,7 @@ const OuvinteSchema = new mongoose_1.default.Schema({
     senha: String,
     numCelular: Number,
 }, {
-    collection: "users",
+    collection: "user",
 });
-const OuvinteModel = mongoose_1.default.model("users", OuvinteSchema);
+const OuvinteModel = mongoose_1.default.model("user", OuvinteSchema);
 exports.default = OuvinteModel;

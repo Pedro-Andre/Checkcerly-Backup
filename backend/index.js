@@ -15,7 +15,7 @@ mongoose_1.default
     .connect(mongoUrl)
     .then(() => console.log("Conectado ao banco de dados"));
 require("./ouvinte");
-app.post("registro/registro-ouvinte", async (req, res) => {
+app.post("http://localhost:8080/users", async (req, res) => {
     const { ouvinteName, ouvinteEmail, ouvintePass, ouvinteTel } = req.body;
     try {
         await ouvinte_1.default.create({

@@ -17,8 +17,8 @@ const OuvintePage: React.FC = () => {
 
     const data = { ouvinteName, ouvinteEmail, ouvintePass, ouvinteTel };
     console.log(data);
-    /*
-    fetch("http://localhost:5173/registro/registro-ouvinte", {
+
+    fetch("http://localhost:8080/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -26,62 +26,22 @@ const OuvintePage: React.FC = () => {
         "Access-Control-Allow-Origin": "*",
       },
       body: JSON.stringify({
-        ouvinteName,
-        ouvinteEmail,
-        ouvintePass,
-        ouvinteTel,
+        name: ouvinteName,
+        email: ouvinteEmail,
+        senha: ouvintePass,
+        celular: ouvinteTel,
       }),
     })
-      .then((res) => {
-        console.log("Status da resposta:", res.status); // Verifica o status da resposta
-        return res.text(); // Altere para text() para inspecionar a resposta
-      })
+      .then((res) => console.log("Status da resposta:", res.status))
       .then((data) => {
         console.log("Dados recebidos:", data);
         try {
-          const jsonData = JSON.parse(data); // Tente converter manualmente para JSON
+          const jsonData = JSON.stringify(data);
           console.log(jsonData);
         } catch (err) {
-          console.error("Erro ao parsear JSON:", err);
+          console.error("Erro no parse JSON:", err);
         }
       });
-      */
-
-    fetch("http://localhost:5173/registro/registro-ouvinte", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-        "Access-Control-Allow-Origin": "*",
-      },
-      body: JSON.stringify({
-        ouvinteName,
-        ouvinteEmail,
-        ouvintePass,
-        ouvinteTel,
-      }),
-    })
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error("Erro na requisição: " + res.status);
-        }
-        if (res.headers.get("Content-Type")?.includes("application/json")) {
-          return res.json(); // Só faz parsing de JSON se o cabeçalho for correto
-        } else {
-          return res.text(); // Retorna texto bruto caso não seja JSON
-        }
-      })
-      .then((data) => {
-        console.log(data);
-      })
-      .catch((error) => {
-        console.error("Erro:", error);
-      });
-
-    // .then((res) => res.json())
-    // .then((data) => {
-    //   console.log(data);
-    // });
 
     // reset input values
     nameInp.value = "";

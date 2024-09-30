@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
-
 function CreateEventBtn() {
   return (
-    <Link to="/criar-evento">
-      <button className="body-btn">Criar Evento</button>
-    </Link>
+    <a>
+      <button className="body-btn" type="submit">
+        Criar Evento
+      </button>
+    </a>
   );
 }
 

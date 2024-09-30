@@ -8,10 +8,10 @@ const OuvinteSchema = new mongoose.Schema(
     numCelular: Number,
   },
   {
-    collection: "users",
+    collection: "user",
   }
 );
 
-const OuvinteModel = mongoose.model("users", OuvinteSchema);
+const OuvinteModel = mongoose.model("user", OuvinteSchema);
 
 export default OuvinteModel;
