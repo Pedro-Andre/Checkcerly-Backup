@@ -1,110 +1,69 @@
 import "./EventoContainer.css";
-import { useState } from "react";
+import React, { useState } from "react";
 import CreateEventBtn from "../Buttons/CreateEventBtn";
 
 const EventoContainer: React.FC = () => {
-  const [eventName, setEventName] = useState<string>("");
-  const [eventTheme, setEventTheme] = useState<string>("");
-  const [eventLocal, setEventLocal] = useState<string>("");
-  const [eventStart, setEventStart] = useState<string>("");
-  const [eventEnd, setEventEnd] = useState<string>("");
-  const [eventHour, setEventHour] = useState<string>("");
+  const [eventoName, setEventoName] = useState<string>("");
+  const [eventoAssunto, setEventoAssunto] = useState<string>("");
+  const [eventoLocal, setEventoLocal] = useState<string>("");
+  const [eventoInicio, setEventoInicio] = useState<string>("");
+  const [eventoFim, setEventoFim] = useState<string>("");
+  const [eventoHora, setEventoHora] = useState<string>("");
+
+  // Formata a hora
+  // const formataHora = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   let valor = e.target.value;
+  //   valor = valor.replace(/\D/g, "");
+
+  //   if (valor.length > 4) valor = valor.slice(0, 4);
+
+  // Formata o valor para o formato HH:MM
+  // if (valor.length >= 2) valor = `${valor.slice(0, 2)}:${valor.slice(2, 4)}`;
+
+  // setEventoHora(valor);
+  // };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
     const data = {
-      nomeEvento: eventName,
-      assuntoEvento: eventTheme,
-      dataInicio: eventStart,
-      dataFim: eventEnd,
-      horaEvento: eventHour,
-      localEvento: eventLocal,
+      nomeEvento: eventoName,
+      assuntoEvento: eventoAssunto,
+      localEvento: eventoLocal,
+      dataInicio: eventoInicio,
+      dataFim: eventoFim,
+      horaEvento: eventoHora,
     };
+    console.log(data);
 
     fetch("http://localhost:8080/events", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        Accept: "application/json",
+        "Access-Control-Allow-Origin": "*",
       },
       body: JSON.stringify(data),
     })
-      .then((res) => res.json())
-      .then((data) => console.log("Dados recebidos:", data))
-      .catch((err) => console.error("Erro na requisição:", err));
+      .then((res) => console.log("Status da resposta:", res.status))
+      .then((data) => {
+        console.log("Dados recebidos: ", data);
+        try {
+          const jsonData = JSON.stringify(data);
+          console.log(jsonData);
+        } catch (err) {
+          console.log("Erros no parse JSON:", err);
+        }
+      });
 
-    // Reset inputs
-    setEventName("");
-    setEventTheme("");
-    setEventLocal("");
-    setEventStart("");
-    setEventEnd("");
-    setEventHour("");
+    // reset input values
+    setEventoName("");
+    setEventoAssunto("");
+    setEventoLocal("");
+    setEventoInicio("");
+    setEventoFim("");
+    setEventoHora("");
   };
-
-  // let nameInp = document.getElementById("event-name") as HTMLInputElement;
-  // let themeInp = document.getElementById("event-theme") as HTMLInputElement;
-  // let localInp = document.getElementById("event-local") as HTMLInputElement;
-  // let startInp = document.getElementById("event-start") as HTMLInputElement;
-  // let endInp = document.getElementById("event-end") as HTMLInputElement;
-  // let hourInp = document.getElementById("event-hour") as HTMLInputElement;
-
-  // const [eventName, setEventName] = useState<string>("");
-  // const [eventTheme, setEventTheme] = useState<string>("");
-  // const [eventLocal, setEventLocal] = useState<string>("");
-  // const [eventStart, setEventStart] = useState<string>("");
-  // const [eventEnd, setEventEnd] = useState<string>("");
-  // const [eventHour, setEventHour] = useState<string>("");
-
-  // const handleSubmit = (e: React.FormEvent) => {
-  //   e.preventDefault();
-
-  // const data = {
-  //   eventName,
-  //   eventTheme,
-  //   eventLocal,
-  //   eventStart,
-  //   eventEnd,
-  //   eventHour,
-  // };
-  // console.log(data);
-
-  // fetch("http://localhost:8080/events", {
-  //   method: "POST",
-  //   headers: {
-  //     "Content-Type": "application/json",
-  //     Accept: "application/json",
-  //     "Access-Control-Allow-Origin": "*",
-  //   },
-  //   body: JSON.stringify({
-  //     nomeEvento: eventName,
-  //     assuntoEvento: eventTheme,
-  //     dataInicio: eventStart,
-  //     dataFim: eventEnd,
-  //     horaEvento: eventHour,
-  //     localEvento: eventLocal,
-  //   }),
-  // })
-  //   .then((res) => res.json())
-  //   .then((data) => {
-  //     console.log("Dados recebidos:", data);
-  //     try {
-  //       const jsonData = JSON.stringify(data);
-  //       console.log(jsonData);
-  //     } catch (err) {
-  //       console.log("Erro no parse JSON:", err);
-  //     }
-  //   });
-
-  // reset input values
-  //   nameInp.value = "";
-  //   themeInp.value = "";
-  //   localInp.value = "";
-  //   startInp.value = "";
-  //   endInp.value = "";
-  //   hourInp.value = "";
-
-  // };
 
   return (
     <>
@@ -149,8 +108,8 @@ const EventoContainer: React.FC = () => {
                 name="nome-evento"
                 id="event-name"
                 placeholder="Nome do evento"
-                // value={eventName}
-                // onChange={(e) => setEventName(e.target.value)}
+                value={eventoName}
+                onChange={(e) => setEventoName(e.target.value)}
               />
             </label>
             <label htmlFor="event-theme">
@@ -158,23 +117,23 @@ const EventoContainer: React.FC = () => {
               <input
                 required
                 type="text"
-                name="nome"
+                name="assunto"
                 id="event-theme"
                 placeholder="Assunto do evento"
-                // value={eventTheme}
-                // onChange={(e) => setEventTheme(e.target.value)}
+                value={eventoAssunto}
+                onChange={(e) => setEventoAssunto(e.target.value)}
               />
             </label>
             <label htmlFor="event-local">
               Local
               <input
-                // required
+                required
                 type="text"
                 name="local"
                 id="event-local"
                 placeholder="Local do evento"
-                // value={eventLocal}
-                // onChange={(e) => setEventLocal(e.target.value)}
+                value={eventoLocal}
+                onChange={(e) => setEventoLocal(e.target.value)}
               />
             </label>
             <div className="date-inputs">
@@ -185,8 +144,9 @@ const EventoContainer: React.FC = () => {
                   type="date"
                   name="inicio"
                   id="event-start"
-                  // value={eventStart}
-                  // onChange={(e) => setEventStart(e.target.value)}
+                  placeholder="00-00-0000"
+                  value={eventoInicio}
+                  onChange={(e) => setEventoInicio(e.target.value)}
                 />
               </label>
               <label htmlFor="event-end">
@@ -196,8 +156,9 @@ const EventoContainer: React.FC = () => {
                   type="date"
                   name="fim"
                   id="event-end"
-                  // value={eventEnd}
-                  // onChange={(e) => setEventEnd(e.target.value)}
+                  placeholder="00-00-0000"
+                  value={eventoFim}
+                  onChange={(e) => setEventoFim(e.target.value)}
                 />
               </label>
             </div>
@@ -209,8 +170,9 @@ const EventoContainer: React.FC = () => {
                 name="hora"
                 id="event-hour"
                 placeholder="Hora do evento"
-                // value={eventHour}
-                // onChange={(e) => setEventHour(e.target.value)}
+                // value={eventoHora}
+                // onChange={(e) => setEventoHora(e.target.value)}
+                // maxLength={5}
               />
             </label>
           </div>

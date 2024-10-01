@@ -2,11 +2,6 @@ import { useState } from "react";
 import CreateAcc from "../Buttons/CreateAccBtn";
 
 const OuvintePage: React.FC = () => {
-  let nameInp = document.getElementById("ouvinte-name") as HTMLInputElement;
-  let emailInp = document.getElementById("ouvinte-email") as HTMLInputElement;
-  let passInp = document.getElementById("ouvinte-senha") as HTMLInputElement;
-  let telInp = document.getElementById("ouvinte-cel") as HTMLInputElement;
-
   const [ouvinteName, setOuvinteName] = useState<string>("");
   const [ouvinteEmail, setOuvinteEmail] = useState<string>("");
   const [ouvintePass, setOuvintePass] = useState<string>("");
@@ -15,7 +10,12 @@ const OuvintePage: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const data = { ouvinteName, ouvinteEmail, ouvintePass, ouvinteTel };
+    const data = {
+      name: ouvinteName,
+      email: ouvinteEmail,
+      senha: ouvintePass,
+      celular: ouvinteTel,
+    };
     console.log(data);
 
     fetch("http://localhost:8080/users", {
@@ -25,12 +25,7 @@ const OuvintePage: React.FC = () => {
         Accept: "application/json",
         "Access-Control-Allow-Origin": "*",
       },
-      body: JSON.stringify({
-        name: ouvinteName,
-        email: ouvinteEmail,
-        senha: ouvintePass,
-        celular: ouvinteTel,
-      }),
+      body: JSON.stringify(data),
     })
       .then((res) => console.log("Status da resposta:", res.status))
       .then((data) => {
@@ -44,10 +39,10 @@ const OuvintePage: React.FC = () => {
       });
 
     // reset input values
-    nameInp.value = "";
-    emailInp.value = "";
-    passInp.value = "";
-    telInp.value = "";
+    setOuvinteName("");
+    setOuvinteEmail("");
+    setOuvintePass("");
+    setOuvinteTel("");
   };
 
   return (

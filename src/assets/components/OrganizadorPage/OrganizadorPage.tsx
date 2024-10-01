@@ -2,15 +2,6 @@ import { useState } from "react";
 import CreateAcc from "../Buttons/CreateAccBtn";
 
 const OrganizadorPage: React.FC = () => {
-  let nameInp = document.getElementById("organizador-name") as HTMLInputElement;
-  let emailInp = document.getElementById(
-    "organizador-email"
-  ) as HTMLInputElement;
-  let passInp = document.getElementById(
-    "organizador-senha"
-  ) as HTMLInputElement;
-  let telInp = document.getElementById("organizador-cel") as HTMLInputElement;
-
   const [organizadorName, setOrganizadorName] = useState<string>("");
   const [organizadorEmail, setOrganizadorEmail] = useState<string>("");
   const [organizadorPass, setOrganizadorPass] = useState<string>("");
@@ -20,10 +11,10 @@ const OrganizadorPage: React.FC = () => {
     e.preventDefault();
 
     const data = {
-      organizadorName,
-      organizadorEmail,
-      organizadorPass,
-      organizadorTel,
+      name: organizadorName,
+      email: organizadorEmail,
+      senha: organizadorPass,
+      celular: organizadorTel,
     };
     console.log(data);
 
@@ -34,12 +25,7 @@ const OrganizadorPage: React.FC = () => {
         Accept: "application/json",
         "Access-Control-Allow-Origin": "*",
       },
-      body: JSON.stringify({
-        name: organizadorName,
-        email: organizadorEmail,
-        senha: organizadorPass,
-        celular: organizadorTel,
-      }),
+      body: JSON.stringify(data),
     })
       .then((res) => console.log("Status da resposta:", res.status))
       .then((data) => {
@@ -53,10 +39,10 @@ const OrganizadorPage: React.FC = () => {
       });
 
     // reset input values
-    nameInp.value = "";
-    emailInp.value = "";
-    passInp.value = "";
-    telInp.value = "";
+    setOrganizadorName("");
+    setOrganizadorEmail("");
+    setOrganizadorPass("");
+    setOrganizadorTel("");
   };
 
   return (
