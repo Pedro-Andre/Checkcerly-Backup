@@ -10,19 +10,6 @@ const EventoContainer: React.FC = () => {
   const [eventoFim, setEventoFim] = useState<string>("");
   const [eventoHora, setEventoHora] = useState<string>("");
 
-  // Formata a hora
-  // const formataHora = (e: React.ChangeEvent<HTMLInputElement>) => {
-  //   let valor = e.target.value;
-  //   valor = valor.replace(/\D/g, "");
-
-  //   if (valor.length > 4) valor = valor.slice(0, 4);
-
-  // Formata o valor para o formato HH:MM
-  // if (valor.length >= 2) valor = `${valor.slice(0, 2)}:${valor.slice(2, 4)}`;
-
-  // setEventoHora(valor);
-  // };
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -163,16 +150,15 @@ const EventoContainer: React.FC = () => {
               </label>
             </div>
             <label htmlFor="event-hour">
-              Hora (início / término)
+              Hora início do Evento
               <input
                 required
-                type="text"
+                type="time"
                 name="hora"
                 id="event-hour"
-                placeholder="Hora do evento"
-                // value={eventoHora}
-                // onChange={(e) => setEventoHora(e.target.value)}
-                // maxLength={5}
+                placeholder="00:00"
+                value={eventoHora}
+                onChange={(e) => setEventoHora(e.target.value)}
               />
             </label>
           </div>
