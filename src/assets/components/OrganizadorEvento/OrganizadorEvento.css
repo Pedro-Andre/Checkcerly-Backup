@@ -31,7 +31,8 @@
   row-gap: 1rem;
 }
 
-.inputs label input {
+.inputs label input,
+.inputs label input:active {
   border: 0.15rem solid var(--clr-black-300);
   background: var(--clr-black);
   border-radius: 2rem;

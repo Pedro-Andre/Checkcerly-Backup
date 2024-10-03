@@ -1,5 +1,5 @@
 import "./HeroSection.css";
-import CreateEventBtn from "../Buttons/CreateEventBtn";
+import CreateEventBtn2 from "../Buttons/CreateEventBtn2";
 import HeroImg from "../imgs/HeroImg";
 
 function HeroSection() {
@@ -10,7 +10,7 @@ function HeroSection() {
           Planeje e Gerencie seus eventos de forma <span>fácil</span> e{" "}
           <span>simplificada</span>.
         </h3>
-        <CreateEventBtn />
+        <CreateEventBtn2 />
       </div>
       <div className="hero-img">
         <HeroImg></HeroImg>

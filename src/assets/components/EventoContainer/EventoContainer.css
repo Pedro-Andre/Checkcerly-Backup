@@ -26,11 +26,8 @@
   margin-bottom: 15rem;
 }
 
-input[type="date"] {
-  cursor: pointer;
-}
-
-input[type="date"]::-webkit-calendar-picker-indicator {
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
   height: 3rem;
   width: 3rem;
@@ -42,6 +39,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   padding-left: calc(80% - 15rem);
 }
 
-input[type="date"]::-webkit-calendar-picker-indicator:hover {
+input[type="date"]::-webkit-calendar-picker-indicator:hover,
+input[type="time"]::-webkit-calendar-picker-indicator:hover {
   opacity: 1;
 }

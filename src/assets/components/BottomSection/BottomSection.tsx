@@ -1,4 +1,4 @@
-import CreateEventBtn from "../Buttons/CreateEventBtn";
+import CreateEventBtn2 from "../Buttons/CreateEventBtn2";
 import "./BottomSection.css";
 
 function BottomSection() {
@@ -41,7 +41,7 @@ function BottomSection() {
               Vamos te ajudar a criar as informações do seu evento de forma
               simplificada
             </span>
-            <CreateEventBtn />
+            <CreateEventBtn2 />
           </div>
         </div>
         <div className="orb-1"></div>

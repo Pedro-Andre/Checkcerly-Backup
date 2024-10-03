@@ -100,7 +100,7 @@ const EventoContainer: React.FC = () => {
               />
             </label>
             <label htmlFor="event-theme">
-              Assunto
+              Assunto do Evento
               <input
                 required
                 type="text"
@@ -112,7 +112,7 @@ const EventoContainer: React.FC = () => {
               />
             </label>
             <label htmlFor="event-local">
-              Local
+              Local do Evento
               <input
                 required
                 type="text"
