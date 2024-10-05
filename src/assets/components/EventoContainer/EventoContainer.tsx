@@ -1,6 +1,7 @@
 import "./EventoContainer.css";
 import React, { useState } from "react";
 import CreateEventBtn from "../Buttons/CreateEventBtn";
+import Mapa from "../Mapa/Mapa";
 
 const EventoContainer: React.FC = () => {
   const [eventoName, setEventoName] = useState<string>("");
@@ -58,14 +59,14 @@ const EventoContainer: React.FC = () => {
         <p className="container-title">Informações do Evento</p>
         <svg
           width="100%"
-          height="95rem"
+          height="122rem"
           xmlns="http://www.w3.org/2000/svg"
           className="svg-container event-svg-container"
         >
           <rect
             rx="20"
             width="100%"
-            height="95rem"
+            height="122rem"
             x="-0"
             y="0"
             stroke="url(#paint0_linear_227_259)"
@@ -114,14 +115,15 @@ const EventoContainer: React.FC = () => {
             <label htmlFor="event-local">
               Local do Evento
               <input
-                required
-                type="text"
-                name="local"
+                // required
+                // type="text"
+                // name="local"
                 id="event-local"
                 placeholder="Local do evento"
                 value={eventoLocal}
                 onChange={(e) => setEventoLocal(e.target.value)}
               />
+              <Mapa />
             </label>
             <div className="date-inputs">
               <label htmlFor="event-start">

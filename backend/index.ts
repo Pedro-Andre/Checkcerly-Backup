@@ -7,8 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const mongoUrl =
-  "mongodb+srv://checkerly:rU32JNG2XOduDjEy@checkerly.g99lj.mongodb.net/";
+const mongoUrl = process.env.VITE_DB_URL as string;
 
 mongoose
   .connect(mongoUrl)
@@ -29,13 +28,6 @@ app.post("http://localhost:8080/users", async (req, res) => {
     res.send({ status: "error" });
   }
 });
-
-// !!!! ANTERIOR !!!!
-// app.post("registro/registro-ouvinte", async (req, res) => {
-//   OuvinteModel.find()
-//     .then((users) => res.json(users))
-//     .catch((err) => res.json(err));
-// });
 
 const port = 5173;
 app.listen(port, () => {
