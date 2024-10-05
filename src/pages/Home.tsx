@@ -1,3 +1,4 @@
+import Geolocation from "../assets/components/Geolocation/Geolocation";
 import Nav from "../assets/components/Nav/Nav";
 import HeroSection from "../assets/components/HeroSection/HeroSection";
 import CardsSection from "../assets/components/CardsSection/CardsSection";
@@ -15,6 +16,7 @@ function Home() {
       <main>
         <section>
           <HeroSection />
+          <Geolocation />
         </section>
 
         <section className="cards-section">
