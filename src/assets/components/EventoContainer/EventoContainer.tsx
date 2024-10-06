@@ -114,7 +114,7 @@ const EventoContainer: React.FC = () => {
             </label>
             <label htmlFor="event-local">
               Local do Evento
-              <input
+              {/* <input
                 // required
                 // type="text"
                 // name="local"
@@ -122,7 +122,7 @@ const EventoContainer: React.FC = () => {
                 placeholder="Local do evento"
                 value={eventoLocal}
                 onChange={(e) => setEventoLocal(e.target.value)}
-              />
+              /> */}
               <Mapa />
             </label>
             <div className="date-inputs">
